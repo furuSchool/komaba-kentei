@@ -1,0 +1,283 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "text": "ダミー設問1です",
+      "choices": [
+        { "id": 1, "image": "/images/dummy.png" },
+        { "id": 2, "image": "/images/dummy.png" },
+        { "id": 3, "image": "/images/dummy.png" },
+        { "id": 4, "image": "/images/dummy.png" }
+      ],
+      "correctChoiceId": 1,
+      "scoring": {
+        "correct": { "route1": 1, "route2": -1, "route3": 0 },
+        "incorrect": { "route1": -1, "route2": -2, "route3": 0 }
+      }
+    },
+    {
+      "id": "q2",
+      "text": "ダミー設問2です",
+      "choices": [
+        { "id": 1, "image": "/images/dummy.png" },
+        { "id": 2, "image": "/images/dummy.png" },
+        { "id": 3, "image": "/images/dummy.png" },
+        { "id": 4, "image": "/images/dummy.png" }
+      ],
+      "correctChoiceId": 2,
+      "scoring": {
+        "correct": { "route1": 0, "route2": 1, "route3": -1 },
+        "incorrect": { "route1": 0, "route2": -1, "route3": -2 }
+      }
+    },
+    {
+      "id": "q3",
+      "text": "ダミー設問3です",
+      "choices": [
+        { "id": 1, "image": "/images/dummy.png" },
+        { "id": 2, "image": "/images/dummy.png" },
+        { "id": 3, "image": "/images/dummy.png" },
+        { "id": 4, "image": "/images/dummy.png" }
+      ],
+      "correctChoiceId": 3,
+      "scoring": {
+        "correct": { "route1": -1, "route2": 0, "route3": 1 },
+        "incorrect": { "route1": -2, "route2": 0, "route3": -1 }
+      }
+    },
+    {
+      "id": "q4",
+      "text": "ダミー設問4です",
+      "choices": [
+        { "id": 1, "image": "/images/dummy.png" },
+        { "id": 2, "image": "/images/dummy.png" },
+        { "id": 3, "image": "/images/dummy.png" },
+        { "id": 4, "image": "/images/dummy.png" }
+      ],
+      "correctChoiceId": 4,
+      "scoring": {
+        "correct": { "route1": 1, "route2": 1, "route3": -1 },
+        "incorrect": { "route1": -1, "route2": -1, "route3": -2 }
+      }
+    },
+    {
+      "id": "q5",
+      "text": "ダミー設問5です",
+      "choices": [
+        { "id": 1, "image": "/images/dummy.png" },
+        { "id": 2, "image": "/images/dummy.png" },
+        { "id": 3, "image": "/images/dummy.png" },
+        { "id": 4, "image": "/images/dummy.png" }
+      ],
+      "correctChoiceId": 1,
+      "scoring": {
+        "correct": { "route1": -1, "route2": 1, "route3": 0 },
+        "incorrect": { "route1": -2, "route2": -1, "route3": 0 }
+      }
+    },
+    {
+      "id": "q6",
+      "text": "ダミー設問6です",
+      "choices": [
+        { "id": 1, "image": "/images/dummy.png" },
+        { "id": 2, "image": "/images/dummy.png" },
+        { "id": 3, "image": "/images/dummy.png" },
+        { "id": 4, "image": "/images/dummy.png" }
+      ],
+      "correctChoiceId": 2,
+      "scoring": {
+        "correct": { "route1": 0, "route2": -1, "route3": 1 },
+        "incorrect": { "route1": 0, "route2": -2, "route3": -1 }
+      }
+    },
+    {
+      "id": "q7",
+      "text": "ダミー設問7です",
+      "choices": [
+        { "id": 1, "image": "/images/dummy.png" },
+        { "id": 2, "image": "/images/dummy.png" },
+        { "id": 3, "image": "/images/dummy.png" },
+        { "id": 4, "image": "/images/dummy.png" }
+      ],
+      "correctChoiceId": 3,
+      "scoring": {
+        "correct": { "route1": 1, "route2": -1, "route3": -1 },
+        "incorrect": { "route1": -1, "route2": -2, "route3": -2 }
+      }
+    },
+    {
+      "id": "q8",
+      "text": "ダミー設問8です",
+      "choices": [
+        { "id": 1, "image": "/images/dummy.png" },
+        { "id": 2, "image": "/images/dummy.png" },
+        { "id": 3, "image": "/images/dummy.png" },
+        { "id": 4, "image": "/images/dummy.png" }
+      ],
+      "correctChoiceId": 4,
+      "scoring": {
+        "correct": { "route1": -1, "route2": -1, "route3": 1 },
+        "incorrect": { "route1": -2, "route2": -1, "route3": -1 }
+      }
+    },
+    {
+      "id": "q9",
+      "text": "ダミー設問9です",
+      "choices": [
+        { "id": 1, "image": "/images/dummy.png" },
+        { "id": 2, "image": "/images/dummy.png" },
+        { "id": 3, "image": "/images/dummy.png" },
+        { "id": 4, "image": "/images/dummy.png" }
+      ],
+      "correctChoiceId": 1,
+      "scoring": {
+        "correct": { "route1": 1, "route2": 0, "route3": -1 },
+        "incorrect": { "route1": -1, "route2": 0, "route3": -2 }
+      }
+    },
+    {
+      "id": "q10",
+      "text": "ダミー設問10です",
+      "choices": [
+        { "id": 1, "image": "/images/dummy.png" },
+        { "id": 2, "image": "/images/dummy.png" },
+        { "id": 3, "image": "/images/dummy.png" },
+        { "id": 4, "image": "/images/dummy.png" }
+      ],
+      "correctChoiceId": 2,
+      "scoring": {
+        "correct": { "route1": -1, "route2": 1, "route3": 1 },
+        "incorrect": { "route1": -2, "route2": -1, "route3": -1 }
+      }
+    }
+  ],
+  "routes": {
+    "route1": {
+      "title": "ダミールート1（駒場さんぽコース）",
+      "stops": [
+        {
+          "type": "spot",
+          "name": "ダミースポットA",
+          "image": "/images/dummy.png",
+          "description": "ダミーの説明文です。ここに見どころを記載します。",
+          "stayMinutes": 30
+        },
+        {
+          "type": "move",
+          "moveMinutes": 5,
+          "transportMode": "徒歩",
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=dummy-a-to-b"
+        },
+        {
+          "type": "spot",
+          "name": "ダミースポットB",
+          "image": "/images/dummy.png",
+          "description": "ダミーの説明文です。名物ダミー料理が楽しめます。",
+          "stayMinutes": 45
+        },
+        {
+          "type": "move",
+          "moveMinutes": 8,
+          "transportMode": "徒歩",
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=dummy-b-to-c"
+        },
+        {
+          "type": "spot",
+          "name": "ダミースポットC",
+          "image": "/images/dummy.png",
+          "description": "ダミーの説明文です。隠れた名所です。",
+          "stayMinutes": 20
+        }
+      ]
+    },
+    "route2": {
+      "title": "ダミールート2（駒場カフェ巡りコース）",
+      "stops": [
+        {
+          "type": "spot",
+          "name": "ダミーカフェD",
+          "image": "/images/dummy.png",
+          "description": "ダミーの説明文です。落ち着いた雰囲気のカフェです。",
+          "stayMinutes": 40
+        },
+        {
+          "type": "move",
+          "moveMinutes": 6,
+          "transportMode": "バス",
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=dummy-d-to-e"
+        },
+        {
+          "type": "spot",
+          "name": "ダミー美術館E",
+          "image": "/images/dummy.png",
+          "description": "ダミーの説明文です。小さな展示が魅力です。",
+          "stayMinutes": 50
+        },
+        {
+          "type": "move",
+          "moveMinutes": 10,
+          "transportMode": "徒歩",
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=dummy-e-to-f"
+        },
+        {
+          "type": "spot",
+          "name": "ダミー雑貨店F",
+          "image": "/images/dummy.png",
+          "description": "ダミーの説明文です。お土産探しにぴったりです。",
+          "stayMinutes": 25
+        }
+      ]
+    },
+    "route3": {
+      "title": "ダミールート3（駒場歴史探訪コース）",
+      "stops": [
+        {
+          "type": "spot",
+          "name": "ダミー博物館G",
+          "image": "/images/dummy.png",
+          "description": "ダミーの説明文です。歴史を感じる展示があります。",
+          "stayMinutes": 35
+        },
+        {
+          "type": "move",
+          "moveMinutes": 4,
+          "transportMode": "徒歩",
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=dummy-g-to-h"
+        },
+        {
+          "type": "spot",
+          "name": "ダミー庭園H",
+          "image": "/images/dummy.png",
+          "description": "ダミーの説明文です。四季折々の景色が楽しめます。",
+          "stayMinutes": 30
+        },
+        {
+          "type": "move",
+          "moveMinutes": 12,
+          "transportMode": "電車",
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=dummy-h-to-i"
+        },
+        {
+          "type": "spot",
+          "name": "ダミー定食屋I",
+          "image": "/images/dummy.png",
+          "description": "ダミーの説明文です。学生に人気の定食屋です。",
+          "stayMinutes": 40
+        }
+      ]
+    }
+  },
+  "comments": {
+    "0": "ダミーコメント0：まだまだこれから！駒場デビューはこれからだ。",
+    "1": "ダミーコメント1：駒場のことをもっと知りたくなったはず。",
+    "2": "ダミーコメント2：少しずつ駒場の顔が見えてきました。",
+    "3": "ダミーコメント3：駒場ビギナー卒業まであと一歩。",
+    "4": "ダミーコメント4：駒場のことが気になり始めた証拠です。",
+    "5": "ダミーコメント5：折り返し地点、駒場理解度50%。",
+    "6": "ダミーコメント6：駒場のことをそこそこ知っています。",
+    "7": "ダミーコメント7：駒場通と呼んでもいいレベルです。",
+    "8": "ダミーコメント8：かなりの駒場マスターです。",
+    "9": "ダミーコメント9：駒場博士まであと一問！",
+    "10": "ダミーコメント10：完璧です、あなたは駒場博士！"
+  }
+}
