@@ -22,6 +22,9 @@ export interface SpotStop {
   image: string;
   description: string;
   stayMinutes: number;
+  hours?: string;
+  websiteUrl?: string;
+  instagramUrl?: string;
 }
 
 export interface MoveStop {

@@ -3,6 +3,23 @@
 import { useState } from "react";
 import { withBasePath } from "@/lib/paths";
 import type { RouteData, RouteKey } from "@/lib/types";
+import { InstagramIcon } from "./icons/BrandIcons";
+
+function WebsiteIcon({ className }: { className?: string }) {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      className={className}
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      aria-hidden
+    >
+      <circle cx="12" cy="12" r="9" />
+      <path d="M3 12h18M12 3c2.5 2.6 3.8 5.7 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.7-3.8-9s1.3-6.4 3.8-9Z" />
+    </svg>
+  );
+}
 
 interface Props {
   recommendedRouteKey: RouteKey;
@@ -100,8 +117,41 @@ export default function RouteScreen({
                 className="h-20 w-20 shrink-0 rounded-2xl object-cover shadow-sm"
               />
               <div className="flex-1 text-left">
-                <p className="font-bold text-zinc-900">{stop.name}</p>
+                <div className="flex items-start justify-between gap-2">
+                  <p className="font-bold text-zinc-900">{stop.name}</p>
+                  {(stop.instagramUrl || stop.websiteUrl) && (
+                    <div className="flex shrink-0 gap-1.5">
+                      {stop.instagramUrl && (
+                        <a
+                          href={stop.instagramUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          aria-label={`${stop.name}のInstagramを見る`}
+                          className="flex h-7 w-7 items-center justify-center rounded-full bg-gradient-to-br from-[#feda75] via-[#d62976] to-[#4f5bd5] shadow-sm transition active:scale-95"
+                        >
+                          <InstagramIcon className="h-4 w-4 text-white" />
+                        </a>
+                      )}
+                      {stop.websiteUrl && (
+                        <a
+                          href={stop.websiteUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          aria-label={`${stop.name}の公式サイトを見る`}
+                          className="flex h-7 w-7 items-center justify-center rounded-full bg-zinc-100 text-zinc-600 shadow-sm transition active:scale-95"
+                        >
+                          <WebsiteIcon className="h-4 w-4" />
+                        </a>
+                      )}
+                    </div>
+                  )}
+                </div>
                 <p className="text-sm text-zinc-600">{stop.description}</p>
+                {stop.hours && (
+                  <p className="mt-1 text-xs text-zinc-500">
+                    営業時間: {stop.hours}
+                  </p>
+                )}
                 <p className="mt-1 text-xs font-semibold text-orange-700">
                   滞在目安: 約{stop.stayMinutes}分
                 </p>
@@ -116,7 +166,7 @@ export default function RouteScreen({
                 rel="noopener noreferrer"
                 className="text-xs font-medium text-blue-600 underline"
               >
-                {stop.transportMode}で約{stop.moveMinutes}分（Googleマップで見る）
+                {stop.transportMode}で約{stop.moveMinutes}分（経路をGoogleマップで見る）
               </a>
             </div>
           )
