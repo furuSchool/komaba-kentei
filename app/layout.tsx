@@ -1,5 +1,13 @@
 import type { Metadata } from "next";
+import { Noto_Sans_JP } from "next/font/google";
 import "./globals.css";
+
+const notoSansJP = Noto_Sans_JP({
+  subsets: ["latin"],
+  weight: ["400", "500", "700", "800", "900"],
+  variable: "--font-noto-sans-jp",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   title: "駒場検定",
@@ -12,7 +20,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ja" className="h-full antialiased">
+    <html lang="ja" className={`h-full antialiased ${notoSansJP.variable}`}>
       <body className="min-h-full flex flex-col bg-amber-50 font-sans">
         <div className="mx-auto flex w-full max-w-md flex-1 flex-col bg-white shadow-xl sm:my-6 sm:rounded-3xl sm:min-h-0">
           {children}

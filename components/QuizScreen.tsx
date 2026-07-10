@@ -11,7 +11,7 @@ interface Props {
   onAnswer: (choiceId: number) => void;
 }
 
-const HIGHLIGHT_DELAY_MS = 500;
+const CHOICE_LABELS = ["A", "B", "C", "D"];
 
 export default function QuizScreen({
   question,
@@ -22,36 +22,58 @@ export default function QuizScreen({
   const [selectedId, setSelectedId] = useState<number | null>(null);
 
   function handleSelect(choiceId: number) {
-    if (selectedId !== null) return;
     setSelectedId(choiceId);
-    setTimeout(() => {
-      onAnswer(choiceId);
-    }, HIGHLIGHT_DELAY_MS);
+  }
+
+  function handleNext() {
+    if (selectedId === null) return;
+    onAnswer(selectedId);
   }
 
   return (
-    <div className="flex flex-1 flex-col gap-6 px-5 py-8">
-      <div className="text-center text-sm font-semibold text-amber-700">
-        {questionNumber}/{totalQuestions}
+    <div className="flex flex-1 flex-col gap-6 bg-zinc-50 px-5 py-8">
+      <div>
+        <p className="mb-3 text-center text-xl font-bold text-zinc-900">
+          Question {questionNumber} / {totalQuestions}
+        </p>
+        <div className="flex gap-2">
+          {Array.from({ length: totalQuestions }).map((_, i) => (
+            <div
+              key={i}
+              className={`h-2 flex-1 rounded-full ${
+                i < questionNumber ? "bg-orange-600" : "bg-zinc-200"
+              }`}
+            />
+          ))}
+        </div>
       </div>
 
-      <div className="grid grid-cols-2 gap-3">
-        {question.choices.map((choice) => {
+      <div className="rounded-3xl bg-white p-6 shadow-sm">
+        <p className="mb-1 text-2xl font-extrabold text-orange-600">Q.</p>
+        <p className="text-xl font-bold leading-relaxed text-zinc-900">
+          {question.text}
+        </p>
+      </div>
+
+      <div className="grid grid-cols-2 gap-4">
+        {question.choices.map((choice, index) => {
           const isSelected = selectedId === choice.id;
           return (
             <button
               key={choice.id}
               onClick={() => handleSelect(choice.id)}
-              disabled={selectedId !== null}
-              className={`aspect-square overflow-hidden rounded-2xl border-4 transition ${
+              className={`relative aspect-[4/5] overflow-hidden rounded-2xl border-4 shadow-sm transition ${
                 isSelected
-                  ? "border-amber-500 ring-4 ring-amber-300 scale-95"
+                  ? "border-orange-600 ring-4 ring-orange-200 scale-95"
                   : "border-transparent"
               }`}
             >
+              <span className="absolute -left-2 -top-2 z-10 flex h-10 w-10 items-center justify-center rounded-full bg-white text-base font-extrabold text-orange-600 shadow-md">
+                {CHOICE_LABELS[index]}
+              </span>
               <img
                 src={withBasePath(choice.image)}
-                alt={`選択肢${choice.id}`}
+                alt={`選択肢${CHOICE_LABELS[index]}`}
                 className="h-full w-full object-cover"
               />
             </button>
@@ -59,9 +81,18 @@ export default function QuizScreen({
         })}
       </div>
 
-      <p className="text-center text-lg font-bold text-zinc-800">
-        {question.text}
+      <p className="text-center text-sm font-medium text-zinc-600">
+        💡 タップして選択してください
       </p>
+
+      <button
+        onClick={handleNext}
+        disabled={selectedId === null}
+        className="mt-auto flex w-full items-center justify-center gap-2 rounded-full bg-orange-600 px-6 py-4 text-lg font-bold text-white shadow-md transition active:scale-95 hover:bg-orange-700 disabled:bg-zinc-300 disabled:shadow-none disabled:active:scale-100"
+      >
+        次の問題へ
+        <span aria-hidden>→</span>
+      </button>
     </div>
   );
 }

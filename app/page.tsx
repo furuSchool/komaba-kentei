@@ -67,8 +67,8 @@ export default function Home() {
     setScreen("route");
   }
 
-  function handleRestart() {
-    setScreen("title");
+  function handleBackToResult() {
+    setScreen("result");
   }
 
   if (screen === "title") {
@@ -95,8 +95,6 @@ export default function Home() {
     return (
       <ResultScreen
         percent={percent}
-        correctCount={correctCount}
-        totalQuestions={quiz.questions.length}
         comment={comment}
         onShowRoute={handleShowRoute}
       />
@@ -109,7 +107,7 @@ export default function Home() {
       <RouteScreen
         routeKey={routeKey}
         route={quiz.routes[routeKey]}
-        onRestart={handleRestart}
+        onBack={handleBackToResult}
       />
     );
   }
