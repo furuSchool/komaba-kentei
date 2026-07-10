@@ -1,11 +1,16 @@
+"use client";
+
+import { useState } from "react";
 import { withBasePath } from "@/lib/paths";
 import type { RouteData, RouteKey } from "@/lib/types";
 
 interface Props {
-  routeKey: RouteKey;
-  route: RouteData;
+  recommendedRouteKey: RouteKey;
+  routes: Record<RouteKey, RouteData>;
   onBack: () => void;
 }
+
+const ROUTE_ORDER: RouteKey[] = ["route1", "route2", "route3", "route4", "route5"];
 
 const ROUTE_LABELS: Record<RouteKey, string> = {
   route1: "ルート1",
@@ -15,24 +20,79 @@ const ROUTE_LABELS: Record<RouteKey, string> = {
   route5: "ルート5",
 };
 
-export default function RouteScreen({ routeKey, route, onBack }: Props) {
+export default function RouteScreen({
+  recommendedRouteKey,
+  routes,
+  onBack,
+}: Props) {
+  const [index, setIndex] = useState(ROUTE_ORDER.indexOf(recommendedRouteKey));
+
+  const routeKey = ROUTE_ORDER[index];
+  const route = routes[routeKey];
+  const isRecommended = routeKey === recommendedRouteKey;
+
+  function handlePrev() {
+    setIndex((i) => (i - 1 + ROUTE_ORDER.length) % ROUTE_ORDER.length);
+  }
+
+  function handleNext() {
+    setIndex((i) => (i + 1) % ROUTE_ORDER.length);
+  }
+
   return (
     <div className="flex flex-1 flex-col gap-6 bg-zinc-50 px-5 py-8">
-      <div className="text-center">
-        <p className="text-sm font-bold text-orange-600">
-          あなたにおすすめの{ROUTE_LABELS[routeKey]}
+      <div>
+        <div className="flex items-center justify-center gap-3">
+          <button
+            onClick={handlePrev}
+            aria-label="前のルートを見る"
+            className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-white text-lg font-bold text-orange-600 shadow-sm transition active:scale-95"
+          >
+            <span aria-hidden>←</span>
+          </button>
+
+          <div className="text-center">
+            <p className="text-sm font-bold text-orange-600">
+              {isRecommended ? "あなたにおすすめの" : ""}
+              {ROUTE_LABELS[routeKey]}
+            </p>
+            <h2 className="mt-1 text-2xl font-extrabold text-zinc-900">
+              {route.title}
+            </h2>
+          </div>
+
+          <button
+            onClick={handleNext}
+            aria-label="次のルートを見る"
+            className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-white text-lg font-bold text-orange-600 shadow-sm transition active:scale-95"
+          >
+            <span aria-hidden>→</span>
+          </button>
+        </div>
+
+        <div className="mt-3 flex items-center justify-center gap-1.5">
+          {ROUTE_ORDER.map((key) => (
+            <span
+              key={key}
+              className={`h-1.5 rounded-full transition-all ${
+                key === routeKey
+                  ? "w-5 bg-orange-600"
+                  : "w-1.5 bg-orange-200"
+              }`}
+            />
+          ))}
+        </div>
+        <p className="mt-2 text-center text-xs text-zinc-500">
+          ← → で他のルートも見てみよう
         </p>
-        <h2 className="mt-1 text-2xl font-extrabold text-zinc-900">
-          {route.title}
-        </h2>
       </div>
 
       <div className="relative pl-9">
         <div className="absolute left-3 top-2 bottom-2 border-l-2 border-dashed border-orange-400" />
 
-        {route.stops.map((stop, index) =>
+        {route.stops.map((stop, stopIndex) =>
           stop.type === "spot" ? (
-            <div key={index} className="relative mb-6 flex gap-4">
+            <div key={stopIndex} className="relative mb-6 flex gap-4">
               <span className="absolute -left-9 top-1 h-4 w-4 rounded-full border-4 border-orange-600 bg-white" />
               <img
                 src={withBasePath(stop.image)}
@@ -48,7 +108,7 @@ export default function RouteScreen({ routeKey, route, onBack }: Props) {
               </div>
             </div>
           ) : (
-            <div key={index} className="relative mb-6 pl-1 text-left">
+            <div key={stopIndex} className="relative mb-6 pl-1 text-left">
               <span className="absolute -left-8 top-0.5 h-2 w-2 rounded-full bg-orange-300" />
               <a
                 href={stop.googleMapsUrl}

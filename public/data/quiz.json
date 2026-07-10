@@ -391,7 +391,7 @@
       }
     }
   ],
-  "routes": {
+"routes": {
     "route1": {
       "title": "駒場ビギナーズルート",
       "stops": [
@@ -442,7 +442,7 @@
         },
         {
           "type": "move",
-          "moveMinutes": 1,
+          "moveMinutes": 4,
           "transportMode": "徒歩",
           "googleMapsUrl": "https://maps.app.goo.gl/4qtNLaUCStogbywC9"
         },
@@ -455,20 +455,7 @@
         },
         {
           "type": "move",
-          "moveMinutes": 18,
-          "transportMode": "徒歩",
-          "googleMapsUrl": "https://maps.app.goo.gl/a5ULm79kCHsEyWq29"
-        },
-        {
-          "type": "spot",
-          "name": "日本民藝館",
-          "image": "/images/dummy.png",
-          "description": "柳宗悦が創設した民藝運動の拠点。生活の中の美しい道具たちに出会える、駒場を代表する文化施設。",
-          "stayMinutes": 40
-        },
-        {
-          "type": "move",
-          "moveMinutes": 3,
+          "moveMinutes": 7,
           "transportMode": "徒歩",
           "googleMapsUrl": "https://maps.app.goo.gl/JBUMrf1FehLH5qj38"
         },
@@ -491,6 +478,19 @@
           "image": "/images/dummy.png",
           "description": "洋館と対をなす数寄屋造りの和館。庭園越しに眺める佇まいが美しい、駒場公園内の隠れた名所。",
           "stayMinutes": 20
+        },
+        {
+          "type": "move",
+          "moveMinutes": 4,
+          "transportMode": "徒歩",
+          "googleMapsUrl": "https://maps.app.goo.gl/a5ULm79kCHsEyWq29"
+        },
+        {
+          "type": "spot",
+          "name": "日本民藝館",
+          "image": "/images/dummy.png",
+          "description": "柳宗悦が創設した民藝運動の拠点。生活の中の美しい道具たちに出会える、駒場を代表する文化施設。",
+          "stayMinutes": 40
         }
       ]
     },
@@ -621,7 +621,7 @@
         },
         {
           "type": "move",
-          "moveMinutes": 15,
+          "moveMinutes": 7,
           "transportMode": "徒歩",
           "googleMapsUrl": "https://maps.app.goo.gl/a5ULm79kCHsEyWq29"
         },
@@ -636,16 +636,16 @@
     }
   },
   "comments": {
-    "0": "ダミーコメント0：まだまだこれから！駒場デビューはこれからだ。",
-    "1": "ダミーコメント1：駒場のことをもっと知りたくなったはず。",
-    "2": "ダミーコメント2：少しずつ駒場の顔が見えてきました。",
-    "3": "ダミーコメント3：駒場ビギナー卒業まであと一歩。",
-    "4": "ダミーコメント4：駒場のことが気になり始めた証拠です。",
-    "5": "ダミーコメント5：折り返し地点、駒場理解度50%。",
-    "6": "ダミーコメント6：駒場のことをそこそこ知っています。",
-    "7": "ダミーコメント7：駒場通と呼んでもいいレベルです。",
-    "8": "ダミーコメント8：かなりの駒場マスターです。",
-    "9": "ダミーコメント9：駒場博士まであと一問！",
-    "10": "ダミーコメント10：完璧です、あなたは駒場博士！"
+    "0": "まだまだこれから！駒場デビューはこれからだ。",
+    "1": "駒場のことをもっと知りたくなったはず。",
+    "2": "少しずつ駒場の顔が見えてきました。",
+    "3": "駒場ビギナー卒業まであと一歩。",
+    "4": "駒場のことが気になり始めた証拠です。",
+    "5": "折り返し地点、駒場理解度50%。",
+    "6": "駒場のことをそこそこ知っています。",
+    "7": "駒場通と呼んでもいいレベルです。",
+    "8": "かなりの駒場マスターです。",
+    "9": "駒場博士まであと一問！",
+    "10": "完璧です、あなたは駒場博士！"
   }
 }

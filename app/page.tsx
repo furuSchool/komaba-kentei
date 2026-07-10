@@ -102,11 +102,11 @@ export default function Home() {
   }
 
   if (screen === "route") {
-    const routeKey = pickRecommendedRoute(quiz.questions, answers);
+    const recommendedRouteKey = pickRecommendedRoute(quiz.questions, answers);
     return (
       <RouteScreen
-        routeKey={routeKey}
-        route={quiz.routes[routeKey]}
+        recommendedRouteKey={recommendedRouteKey}
+        routes={quiz.routes}
         onBack={handleBackToResult}
       />
     );
