@@ -1,4 +1,4 @@
-export type RouteKey = "route1" | "route2" | "route3";
+export type RouteKey = "route1" | "route2" | "route3" | "route4" | "route5";
 
 export interface Choice {
   id: number;

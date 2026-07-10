@@ -11,6 +11,8 @@ const ROUTE_LABELS: Record<RouteKey, string> = {
   route1: "ルート1",
   route2: "ルート2",
   route3: "ルート3",
+  route4: "ルート4",
+  route5: "ルート5",
 };
 
 export default function RouteScreen({ routeKey, route, onBack }: Props) {

@@ -4,264 +4,632 @@
       "id": "q1",
       "text": "ダミー設問1です",
       "choices": [
-        { "id": 1, "image": "/images/dummy.png" },
-        { "id": 2, "image": "/images/dummy.png" },
-        { "id": 3, "image": "/images/dummy.png" },
-        { "id": 4, "image": "/images/dummy.png" }
+        {
+          "id": 1,
+          "image": "/images/dummy.png"
+        },
+        {
+          "id": 2,
+          "image": "/images/dummy.png"
+        },
+        {
+          "id": 3,
+          "image": "/images/dummy.png"
+        },
+        {
+          "id": 4,
+          "image": "/images/dummy.png"
+        }
       ],
       "correctChoiceId": 1,
       "scoring": {
-        "correct": { "route1": 1, "route2": -1, "route3": 0 },
-        "incorrect": { "route1": -1, "route2": -2, "route3": 0 }
+        "correct": {
+          "route1": 1,
+          "route2": -1,
+          "route3": 0,
+          "route4": 0,
+          "route5": -1
+        },
+        "incorrect": {
+          "route1": -1,
+          "route2": -2,
+          "route3": 0,
+          "route4": 0,
+          "route5": -2
+        }
       }
     },
     {
       "id": "q2",
       "text": "ダミー設問2です",
       "choices": [
-        { "id": 1, "image": "/images/dummy.png" },
-        { "id": 2, "image": "/images/dummy.png" },
-        { "id": 3, "image": "/images/dummy.png" },
-        { "id": 4, "image": "/images/dummy.png" }
+        {
+          "id": 1,
+          "image": "/images/dummy.png"
+        },
+        {
+          "id": 2,
+          "image": "/images/dummy.png"
+        },
+        {
+          "id": 3,
+          "image": "/images/dummy.png"
+        },
+        {
+          "id": 4,
+          "image": "/images/dummy.png"
+        }
       ],
       "correctChoiceId": 2,
       "scoring": {
-        "correct": { "route1": 0, "route2": 1, "route3": -1 },
-        "incorrect": { "route1": 0, "route2": -1, "route3": -2 }
+        "correct": {
+          "route1": 0,
+          "route2": 1,
+          "route3": -1,
+          "route4": -1,
+          "route5": 1
+        },
+        "incorrect": {
+          "route1": 0,
+          "route2": -1,
+          "route3": -2,
+          "route4": -1,
+          "route5": -1
+        }
       }
     },
     {
       "id": "q3",
       "text": "ダミー設問3です",
       "choices": [
-        { "id": 1, "image": "/images/dummy.png" },
-        { "id": 2, "image": "/images/dummy.png" },
-        { "id": 3, "image": "/images/dummy.png" },
-        { "id": 4, "image": "/images/dummy.png" }
+        {
+          "id": 1,
+          "image": "/images/dummy.png"
+        },
+        {
+          "id": 2,
+          "image": "/images/dummy.png"
+        },
+        {
+          "id": 3,
+          "image": "/images/dummy.png"
+        },
+        {
+          "id": 4,
+          "image": "/images/dummy.png"
+        }
       ],
       "correctChoiceId": 3,
       "scoring": {
-        "correct": { "route1": -1, "route2": 0, "route3": 1 },
-        "incorrect": { "route1": -2, "route2": 0, "route3": -1 }
+        "correct": {
+          "route1": -1,
+          "route2": 0,
+          "route3": 1,
+          "route4": 1,
+          "route5": 0
+        },
+        "incorrect": {
+          "route1": -2,
+          "route2": 0,
+          "route3": -1,
+          "route4": -1,
+          "route5": 0
+        }
       }
     },
     {
       "id": "q4",
       "text": "ダミー設問4です",
       "choices": [
-        { "id": 1, "image": "/images/dummy.png" },
-        { "id": 2, "image": "/images/dummy.png" },
-        { "id": 3, "image": "/images/dummy.png" },
-        { "id": 4, "image": "/images/dummy.png" }
+        {
+          "id": 1,
+          "image": "/images/dummy.png"
+        },
+        {
+          "id": 2,
+          "image": "/images/dummy.png"
+        },
+        {
+          "id": 3,
+          "image": "/images/dummy.png"
+        },
+        {
+          "id": 4,
+          "image": "/images/dummy.png"
+        }
       ],
       "correctChoiceId": 4,
       "scoring": {
-        "correct": { "route1": 1, "route2": 1, "route3": -1 },
-        "incorrect": { "route1": -1, "route2": -1, "route3": -2 }
+        "correct": {
+          "route1": 1,
+          "route2": 1,
+          "route3": -1,
+          "route4": -1,
+          "route5": -1
+        },
+        "incorrect": {
+          "route1": -1,
+          "route2": -1,
+          "route3": -2,
+          "route4": -2,
+          "route5": -1
+        }
       }
     },
     {
       "id": "q5",
       "text": "ダミー設問5です",
       "choices": [
-        { "id": 1, "image": "/images/dummy.png" },
-        { "id": 2, "image": "/images/dummy.png" },
-        { "id": 3, "image": "/images/dummy.png" },
-        { "id": 4, "image": "/images/dummy.png" }
+        {
+          "id": 1,
+          "image": "/images/dummy.png"
+        },
+        {
+          "id": 2,
+          "image": "/images/dummy.png"
+        },
+        {
+          "id": 3,
+          "image": "/images/dummy.png"
+        },
+        {
+          "id": 4,
+          "image": "/images/dummy.png"
+        }
       ],
       "correctChoiceId": 1,
       "scoring": {
-        "correct": { "route1": -1, "route2": 1, "route3": 0 },
-        "incorrect": { "route1": -2, "route2": -1, "route3": 0 }
+        "correct": {
+          "route1": -1,
+          "route2": 1,
+          "route3": 0,
+          "route4": 0,
+          "route5": 1
+        },
+        "incorrect": {
+          "route1": -2,
+          "route2": -1,
+          "route3": 0,
+          "route4": 0,
+          "route5": -1
+        }
       }
     },
     {
       "id": "q6",
       "text": "ダミー設問6です",
       "choices": [
-        { "id": 1, "image": "/images/dummy.png" },
-        { "id": 2, "image": "/images/dummy.png" },
-        { "id": 3, "image": "/images/dummy.png" },
-        { "id": 4, "image": "/images/dummy.png" }
+        {
+          "id": 1,
+          "image": "/images/dummy.png"
+        },
+        {
+          "id": 2,
+          "image": "/images/dummy.png"
+        },
+        {
+          "id": 3,
+          "image": "/images/dummy.png"
+        },
+        {
+          "id": 4,
+          "image": "/images/dummy.png"
+        }
       ],
       "correctChoiceId": 2,
       "scoring": {
-        "correct": { "route1": 0, "route2": -1, "route3": 1 },
-        "incorrect": { "route1": 0, "route2": -2, "route3": -1 }
+        "correct": {
+          "route1": 0,
+          "route2": -1,
+          "route3": 1,
+          "route4": 1,
+          "route5": -1
+        },
+        "incorrect": {
+          "route1": 0,
+          "route2": -2,
+          "route3": -1,
+          "route4": -1,
+          "route5": -2
+        }
       }
     },
     {
       "id": "q7",
       "text": "ダミー設問7です",
       "choices": [
-        { "id": 1, "image": "/images/dummy.png" },
-        { "id": 2, "image": "/images/dummy.png" },
-        { "id": 3, "image": "/images/dummy.png" },
-        { "id": 4, "image": "/images/dummy.png" }
+        {
+          "id": 1,
+          "image": "/images/dummy.png"
+        },
+        {
+          "id": 2,
+          "image": "/images/dummy.png"
+        },
+        {
+          "id": 3,
+          "image": "/images/dummy.png"
+        },
+        {
+          "id": 4,
+          "image": "/images/dummy.png"
+        }
       ],
       "correctChoiceId": 3,
       "scoring": {
-        "correct": { "route1": 1, "route2": -1, "route3": -1 },
-        "incorrect": { "route1": -1, "route2": -2, "route3": -2 }
+        "correct": {
+          "route1": 1,
+          "route2": -1,
+          "route3": -1,
+          "route4": 0,
+          "route5": 1
+        },
+        "incorrect": {
+          "route1": -1,
+          "route2": -2,
+          "route3": -2,
+          "route4": -1,
+          "route5": -1
+        }
       }
     },
     {
       "id": "q8",
       "text": "ダミー設問8です",
       "choices": [
-        { "id": 1, "image": "/images/dummy.png" },
-        { "id": 2, "image": "/images/dummy.png" },
-        { "id": 3, "image": "/images/dummy.png" },
-        { "id": 4, "image": "/images/dummy.png" }
+        {
+          "id": 1,
+          "image": "/images/dummy.png"
+        },
+        {
+          "id": 2,
+          "image": "/images/dummy.png"
+        },
+        {
+          "id": 3,
+          "image": "/images/dummy.png"
+        },
+        {
+          "id": 4,
+          "image": "/images/dummy.png"
+        }
       ],
       "correctChoiceId": 4,
       "scoring": {
-        "correct": { "route1": -1, "route2": -1, "route3": 1 },
-        "incorrect": { "route1": -2, "route2": -1, "route3": -1 }
+        "correct": {
+          "route1": -1,
+          "route2": -1,
+          "route3": 1,
+          "route4": 1,
+          "route5": 0
+        },
+        "incorrect": {
+          "route1": -2,
+          "route2": -1,
+          "route3": -1,
+          "route4": -1,
+          "route5": -1
+        }
       }
     },
     {
       "id": "q9",
       "text": "ダミー設問9です",
       "choices": [
-        { "id": 1, "image": "/images/dummy.png" },
-        { "id": 2, "image": "/images/dummy.png" },
-        { "id": 3, "image": "/images/dummy.png" },
-        { "id": 4, "image": "/images/dummy.png" }
+        {
+          "id": 1,
+          "image": "/images/dummy.png"
+        },
+        {
+          "id": 2,
+          "image": "/images/dummy.png"
+        },
+        {
+          "id": 3,
+          "image": "/images/dummy.png"
+        },
+        {
+          "id": 4,
+          "image": "/images/dummy.png"
+        }
       ],
       "correctChoiceId": 1,
       "scoring": {
-        "correct": { "route1": 1, "route2": 0, "route3": -1 },
-        "incorrect": { "route1": -1, "route2": 0, "route3": -2 }
+        "correct": {
+          "route1": 1,
+          "route2": 0,
+          "route3": -1,
+          "route4": -1,
+          "route5": 1
+        },
+        "incorrect": {
+          "route1": -1,
+          "route2": 0,
+          "route3": -2,
+          "route4": -2,
+          "route5": -1
+        }
       }
     },
     {
       "id": "q10",
       "text": "ダミー設問10です",
       "choices": [
-        { "id": 1, "image": "/images/dummy.png" },
-        { "id": 2, "image": "/images/dummy.png" },
-        { "id": 3, "image": "/images/dummy.png" },
-        { "id": 4, "image": "/images/dummy.png" }
+        {
+          "id": 1,
+          "image": "/images/dummy.png"
+        },
+        {
+          "id": 2,
+          "image": "/images/dummy.png"
+        },
+        {
+          "id": 3,
+          "image": "/images/dummy.png"
+        },
+        {
+          "id": 4,
+          "image": "/images/dummy.png"
+        }
       ],
       "correctChoiceId": 2,
       "scoring": {
-        "correct": { "route1": -1, "route2": 1, "route3": 1 },
-        "incorrect": { "route1": -2, "route2": -1, "route3": -1 }
+        "correct": {
+          "route1": -1,
+          "route2": 1,
+          "route3": 1,
+          "route4": 1,
+          "route5": -1
+        },
+        "incorrect": {
+          "route1": -2,
+          "route2": -1,
+          "route3": -1,
+          "route4": -1,
+          "route5": -2
+        }
       }
     }
   ],
   "routes": {
     "route1": {
-      "title": "ダミールート1（駒場さんぽコース）",
+      "title": "駒場ビギナーズルート",
       "stops": [
         {
           "type": "spot",
-          "name": "ダミースポットA",
+          "name": "東京大学駒場博物館",
           "image": "/images/dummy.png",
-          "description": "ダミーの説明文です。ここに見どころを記載します。",
-          "stayMinutes": 30
-        },
-        {
-          "type": "move",
-          "moveMinutes": 5,
-          "transportMode": "徒歩",
-          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=dummy-a-to-b"
-        },
-        {
-          "type": "spot",
-          "name": "ダミースポットB",
-          "image": "/images/dummy.png",
-          "description": "ダミーの説明文です。名物ダミー料理が楽しめます。",
-          "stayMinutes": 45
-        },
-        {
-          "type": "move",
-          "moveMinutes": 8,
-          "transportMode": "徒歩",
-          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=dummy-b-to-c"
-        },
-        {
-          "type": "spot",
-          "name": "ダミースポットC",
-          "image": "/images/dummy.png",
-          "description": "ダミーの説明文です。隠れた名所です。",
-          "stayMinutes": 20
-        }
-      ]
-    },
-    "route2": {
-      "title": "ダミールート2（駒場カフェ巡りコース）",
-      "stops": [
-        {
-          "type": "spot",
-          "name": "ダミーカフェD",
-          "image": "/images/dummy.png",
-          "description": "ダミーの説明文です。落ち着いた雰囲気のカフェです。",
-          "stayMinutes": 40
-        },
-        {
-          "type": "move",
-          "moveMinutes": 6,
-          "transportMode": "バス",
-          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=dummy-d-to-e"
-        },
-        {
-          "type": "spot",
-          "name": "ダミー美術館E",
-          "image": "/images/dummy.png",
-          "description": "ダミーの説明文です。小さな展示が魅力です。",
-          "stayMinutes": 50
-        },
-        {
-          "type": "move",
-          "moveMinutes": 10,
-          "transportMode": "徒歩",
-          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=dummy-e-to-f"
-        },
-        {
-          "type": "spot",
-          "name": "ダミー雑貨店F",
-          "image": "/images/dummy.png",
-          "description": "ダミーの説明文です。お土産探しにぴったりです。",
-          "stayMinutes": 25
-        }
-      ]
-    },
-    "route3": {
-      "title": "ダミールート3（駒場歴史探訪コース）",
-      "stops": [
-        {
-          "type": "spot",
-          "name": "ダミー博物館G",
-          "image": "/images/dummy.png",
-          "description": "ダミーの説明文です。歴史を感じる展示があります。",
-          "stayMinutes": 35
-        },
-        {
-          "type": "move",
-          "moveMinutes": 4,
-          "transportMode": "徒歩",
-          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=dummy-g-to-h"
-        },
-        {
-          "type": "spot",
-          "name": "ダミー庭園H",
-          "image": "/images/dummy.png",
-          "description": "ダミーの説明文です。四季折々の景色が楽しめます。",
+          "description": "旧制一高の図書館だった建物を活かした東大の博物館。美術と自然科学、両方の企画展が楽しめる。入館無料。",
           "stayMinutes": 30
         },
         {
           "type": "move",
           "moveMinutes": 12,
-          "transportMode": "電車",
-          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=dummy-h-to-i"
+          "transportMode": "徒歩",
+          "googleMapsUrl": "https://maps.app.goo.gl/a5ULm79kCHsEyWq29"
         },
         {
           "type": "spot",
-          "name": "ダミー定食屋I",
+          "name": "日本民藝館",
           "image": "/images/dummy.png",
-          "description": "ダミーの説明文です。学生に人気の定食屋です。",
+          "description": "柳宗悦が創設した民藝運動の拠点。生活の中の美しい道具たちに出会える、駒場を代表する文化施設。",
+          "stayMinutes": 40
+        },
+        {
+          "type": "move",
+          "moveMinutes": 10,
+          "transportMode": "徒歩",
+          "googleMapsUrl": "https://maps.app.goo.gl/KYNvtKPVd9jbqTV39"
+        },
+        {
+          "type": "spot",
+          "name": "Kitchen & Bar Oaks",
+          "image": "/images/dummy.png",
+          "description": "東大生に長年愛される定食バー。ボリューム満点のチキンカツなど、夜も定食が楽しめる貴重な一軒。",
+          "stayMinutes": 40
+        }
+      ]
+    },
+    "route2": {
+      "title": "駒場おしゃれ探訪ルート",
+      "stops": [
+        {
+          "type": "spot",
+          "name": "Port tomigaya",
+          "image": "/images/dummy.png",
+          "description": "富ヶ谷の路地にたたずむ、おしゃれなカフェ&バー。ゆったりとした時間を過ごせる隠れ家的スポット。",
+          "stayMinutes": 25
+        },
+        {
+          "type": "move",
+          "moveMinutes": 1,
+          "transportMode": "徒歩",
+          "googleMapsUrl": "https://maps.app.goo.gl/4qtNLaUCStogbywC9"
+        },
+        {
+          "type": "spot",
+          "name": "BONDI COFFEE SANDWICHES",
+          "image": "/images/dummy.png",
+          "description": "オーストラリア発、こだわりのサンドイッチとコーヒーが楽しめる「裏渋谷」の人気カフェ。",
+          "stayMinutes": 20
+        },
+        {
+          "type": "move",
+          "moveMinutes": 18,
+          "transportMode": "徒歩",
+          "googleMapsUrl": "https://maps.app.goo.gl/a5ULm79kCHsEyWq29"
+        },
+        {
+          "type": "spot",
+          "name": "日本民藝館",
+          "image": "/images/dummy.png",
+          "description": "柳宗悦が創設した民藝運動の拠点。生活の中の美しい道具たちに出会える、駒場を代表する文化施設。",
+          "stayMinutes": 40
+        },
+        {
+          "type": "move",
+          "moveMinutes": 3,
+          "transportMode": "徒歩",
+          "googleMapsUrl": "https://maps.app.goo.gl/JBUMrf1FehLH5qj38"
+        },
+        {
+          "type": "spot",
+          "name": "旧前田侯爵邸洋館",
+          "image": "/images/dummy.png",
+          "description": "旧加賀藩主・前田家の邸宅だった重要文化財の洋館。昭和初期の重厚な建築美を間近で見学できる。",
+          "stayMinutes": 25
+        },
+        {
+          "type": "move",
+          "moveMinutes": 2,
+          "transportMode": "徒歩",
+          "googleMapsUrl": "https://maps.app.goo.gl/zeFcPHC7UjQ5KfYp6"
+        },
+        {
+          "type": "spot",
+          "name": "旧前田侯爵邸和館",
+          "image": "/images/dummy.png",
+          "description": "洋館と対をなす数寄屋造りの和館。庭園越しに眺める佇まいが美しい、駒場公園内の隠れた名所。",
+          "stayMinutes": 20
+        }
+      ]
+    },
+    "route3": {
+      "title": "駒場グルメ制覇ルート",
+      "stops": [
+        {
+          "type": "spot",
+          "name": "雅にぃ",
+          "image": "/images/stores/masani/masani1.png",
+          "description": "駒場東大前駅前の小さなたい焼き店。あずき・カスタードなど日替わりの味も楽しみな一品。",
+          "stayMinutes": 10
+        },
+        {
+          "type": "move",
+          "moveMinutes": 4,
+          "transportMode": "徒歩",
+          "googleMapsUrl": "https://maps.app.goo.gl/W8oPxXNkGFsRjo3cA"
+        },
+        {
+          "type": "spot",
+          "name": "TIRAMISU HOME MADE",
+          "image": "/images/stores/thiramisu/thiramisu.jpg",
+          "description": "都内初のレアティラミス専門店。ふわとろの口どけが評判で、コーヒーと一緒に一息つける。",
+          "stayMinutes": 15
+        },
+        {
+          "type": "move",
+          "moveMinutes": 5,
+          "transportMode": "徒歩",
+          "googleMapsUrl": "https://maps.app.goo.gl/WRqH7SEzFZfj59of9"
+        },
+        {
+          "type": "spot",
+          "name": "菱田屋",
+          "image": "/images/dummy.png",
+          "description": "創業100年を超える老舗食堂。生姜焼きやアジフライなど、がっつり系定食が揃う駒場の名物店。",
+          "stayMinutes": 35
+        },
+        {
+          "type": "move",
+          "moveMinutes": 15,
+          "transportMode": "徒歩",
+          "googleMapsUrl": "https://maps.app.goo.gl/a5ULm79kCHsEyWq29"
+        },
+        {
+          "type": "spot",
+          "name": "日本民藝館",
+          "image": "/images/dummy.png",
+          "description": "柳宗悦が創設した民藝運動の拠点。生活の中の美しい道具たちに出会える、駒場を代表する文化施設。",
+          "stayMinutes": 40
+        }
+      ]
+    },
+    "route4": {
+      "title": "駒場カルチャー散策ルート",
+      "stops": [
+        {
+          "type": "spot",
+          "name": "日本近代文学館",
+          "image": "/images/stores/bungakukan/bungakukan.jpg",
+          "description": "近代文学の資料を集めた文学館。駒場公園の緑の中に佇む、静かに過ごせる読書好き必訪のスポット。",
+          "stayMinutes": 30
+        },
+        {
+          "type": "move",
+          "moveMinutes": 2,
+          "transportMode": "徒歩",
+          "googleMapsUrl": "https://maps.app.goo.gl/JBUMrf1FehLH5qj38"
+        },
+        {
+          "type": "spot",
+          "name": "旧前田侯爵邸洋館",
+          "image": "/images/dummy.png",
+          "description": "旧加賀藩主・前田家の邸宅だった重要文化財の洋館。昭和初期の重厚な建築美を間近で見学できる。",
+          "stayMinutes": 25
+        },
+        {
+          "type": "move",
+          "moveMinutes": 2,
+          "transportMode": "徒歩",
+          "googleMapsUrl": "https://maps.app.goo.gl/zeFcPHC7UjQ5KfYp6"
+        },
+        {
+          "type": "spot",
+          "name": "旧前田侯爵邸和館",
+          "image": "/images/dummy.png",
+          "description": "洋館と対をなす数寄屋造りの和館。庭園越しに眺める佇まいが美しい、駒場公園内の隠れた名所。",
+          "stayMinutes": 20
+        },
+        {
+          "type": "move",
+          "moveMinutes": 3,
+          "transportMode": "徒歩",
+          "googleMapsUrl": "https://maps.app.goo.gl/a5ULm79kCHsEyWq29"
+        },
+        {
+          "type": "spot",
+          "name": "日本民藝館",
+          "image": "/images/dummy.png",
+          "description": "柳宗悦が創設した民藝運動の拠点。生活の中の美しい道具たちに出会える、駒場を代表する文化施設。",
+          "stayMinutes": 40
+        }
+      ]
+    },
+    "route5": {
+      "title": "駒場さんぽデートルート",
+      "stops": [
+        {
+          "type": "spot",
+          "name": "Le Ressort",
+          "image": "/images/stores/le_ressort/le_ressort.png",
+          "description": "駒場東大前駅すぐの人気ベーカリー。上質な素材で作るパンを求めて行列ができることも。",
+          "stayMinutes": 15
+        },
+        {
+          "type": "move",
+          "moveMinutes": 5,
+          "transportMode": "徒歩",
+          "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=%E9%A7%92%E5%A0%B4%E9%87%8E%E5%85%AC%E5%9C%92%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E7%9B%AE%E9%BB%92%E5%8C%BA%E9%A7%92%E5%A0%B42-19-70"
+        },
+        {
+          "type": "spot",
+          "name": "駒場野公園",
+          "image": "/images/dummy.png",
+          "description": "「ケルネル田んぼ」など自然豊かな公園。駒場東大前駅から徒歩1分とは思えない、のんびり散策できる穴場。",
+          "stayMinutes": 20
+        },
+        {
+          "type": "move",
+          "moveMinutes": 15,
+          "transportMode": "徒歩",
+          "googleMapsUrl": "https://maps.app.goo.gl/a5ULm79kCHsEyWq29"
+        },
+        {
+          "type": "spot",
+          "name": "日本民藝館",
+          "image": "/images/dummy.png",
+          "description": "柳宗悦が創設した民藝運動の拠点。生活の中の美しい道具たちに出会える、駒場を代表する文化施設。",
           "stayMinutes": 40
         }
       ]

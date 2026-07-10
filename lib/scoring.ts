@@ -1,6 +1,6 @@
 import type { Answer, Question, QuizData, RouteKey } from "./types";
 
-const ROUTE_KEYS: RouteKey[] = ["route1", "route2", "route3"];
+const ROUTE_KEYS: RouteKey[] = ["route1", "route2", "route3", "route4", "route5"];
 
 export function gradeAnswers(
   questions: Question[],
@@ -32,6 +32,8 @@ export function pickRecommendedRoute(
     route1: 0,
     route2: 0,
     route3: 0,
+    route4: 0,
+    route5: 0,
   };
 
   for (const answer of answers) {
