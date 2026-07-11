@@ -10,9 +10,16 @@ export interface Question {
   text: string;
   choices: Choice[];
   correctChoiceId: number;
-  scoring: {
-    correct: Record<RouteKey, number>;
-    incorrect: Record<RouteKey, number>;
+  /** Per-route points: added when the question is answered correctly, subtracted when incorrect. */
+  scoring: Record<RouteKey, number>;
+  /**
+   * Attribution for an externally-sourced choice image, shown as a
+   * question-level note (not attached to any one choice) so it doesn't
+   * hint which option is the real photo.
+   */
+  citation?: {
+    label: string;
+    url: string;
   };
 }
 

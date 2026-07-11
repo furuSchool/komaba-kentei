@@ -8,30 +8,47 @@ export default function TitleScreen({ onStart }: Props) {
   return (
     <div className="relative flex flex-1 flex-col overflow-hidden">
       <img
-        src={withBasePath("/images/dummy.png")}
+        src={withBasePath("/images/others/yasuda.jpg")}
         alt=""
         className="absolute inset-0 h-full w-full object-cover"
       />
+      <div className="absolute inset-0 bg-gradient-to-b from-black/15 via-black/30 to-black/75" />
 
       <div className="relative z-10 flex flex-1 flex-col">
         <header className="flex items-center px-5 py-4">
           <div className="leading-none">
-            <p className="text-lg font-extrabold tracking-tight text-zinc-900 drop-shadow-sm">
+            <p className="text-lg font-extrabold tracking-tight text-white drop-shadow-sm">
               駒場検定
             </p>
-            <p className="text-[10px] font-semibold tracking-widest text-zinc-800/90 drop-shadow-sm">
+            <p className="text-[10px] font-semibold tracking-widest text-white/80 drop-shadow-sm">
               KOMABA TEST
             </p>
           </div>
         </header>
 
-        <div className="flex flex-1 flex-col items-center justify-center gap-8 px-6 py-12 text-center">
-          <div className="space-y-2">
-            <h1 className="text-4xl font-extrabold tracking-tight text-amber-900">
-              駒場検定
-            </h1>
-            <p className="text-sm text-zinc-600">
-              全10問のクイズであなたの「駒場理解度」を診断しよう
+        <div className="flex flex-1 flex-col justify-center gap-3 px-6 pt-4">
+          <h1 className="text-4xl font-extrabold leading-tight tracking-tight text-white drop-shadow">
+            まだ知らない
+            <br />
+            駒場に、
+            <br />
+            <span className="text-orange-400">出会</span>おう。
+          </h1>
+          <p className="text-sm font-medium text-white/85">
+            東大生のための
+            <br />
+            駒場キャンパス検定
+          </p>
+        </div>
+
+        <div className="px-6 pb-6">
+          <div className="max-w-[15rem] rounded-2xl bg-white/95 p-4 text-left shadow-lg backdrop-blur">
+            <p className="text-sm font-bold leading-snug text-zinc-800">
+              どこまで知ってる？
+              <br />
+              あなたの駒場力を
+              <br />
+              試してみよう！
             </p>
           </div>
         </div>

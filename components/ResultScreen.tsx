@@ -8,7 +8,7 @@ interface Props {
 }
 
 const SUB_MESSAGE =
-  "駒場には、知っているようで知らない魅力がたくさんある。今日から、キャンパスの外へ出てみよう！";
+  "駒場には知らない魅力がたくさんあるはず。今日から、駒場キャンパスの外へ出てみよう！";
 
 function formatToday(): string {
   const d = new Date();
@@ -19,7 +19,9 @@ function formatToday(): string {
 export default function ResultScreen({ percent, comment, onShowRoute }: Props) {
   return (
     <div className="flex flex-1 flex-col items-center gap-6 bg-zinc-50 px-6 py-8 text-center">
-      <h1 className="text-2xl font-bold text-zinc-900">診断結果</h1>
+      <h1 className="w-full text-left text-2xl font-bold text-zinc-900">
+        診断結果
+      </h1>
 
       <div>
         <div className="flex items-center justify-center gap-3 text-orange-600">
@@ -46,11 +48,11 @@ export default function ResultScreen({ percent, comment, onShowRoute }: Props) {
 
       <div className="relative w-full max-w-xs overflow-hidden rounded-2xl text-left text-white shadow-lg">
         <img
-          src={withBasePath("/images/dummy.png")}
+          src={withBasePath("/images/others/yasuda.jpg")}
           alt=""
           className="absolute inset-0 h-full w-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/55 via-black/10 to-black/60" />
+        <div className="absolute inset-0 bg-gradient-to-b from-slate-900/60 via-slate-900/15 to-slate-900/70" />
         <div className="relative flex aspect-[4/5] flex-col p-5">
           <div className="flex items-start justify-between">
             <div>

@@ -39,11 +39,9 @@ export function pickRecommendedRoute(
   for (const answer of answers) {
     const question = questions.find((q) => q.id === answer.questionId);
     if (!question) continue;
-    const deltas = answer.correct
-      ? question.scoring.correct
-      : question.scoring.incorrect;
+    const sign = answer.correct ? 1 : -1;
     for (const key of ROUTE_KEYS) {
-      totals[key] += deltas[key];
+      totals[key] += sign * question.scoring[key];
     }
   }
 

@@ -2,392 +2,156 @@
   "questions": [
     {
       "id": "q1",
-      "text": "ダミー設問1です",
+      "text": "これらの看板のうち、駒場にある店はどれ？",
       "choices": [
         {
           "id": 1,
-          "image": "/images/dummy.png"
+          "image": "/images/questions/1/1.jpg"
         },
         {
           "id": 2,
-          "image": "/images/dummy.png"
+          "image": "/images/questions/1/2.jpg"
         },
         {
           "id": 3,
-          "image": "/images/dummy.png"
+          "image": "/images/questions/1/3.jpg"
         },
         {
           "id": 4,
-          "image": "/images/dummy.png"
+          "image": "/images/stores/masani/masani2.png"
         }
       ],
-      "correctChoiceId": 1,
+      "correctChoiceId": 4,
       "scoring": {
-        "correct": {
-          "route1": 1,
-          "route2": -1,
-          "route3": 0,
-          "route4": 0,
-          "route5": -1
-        },
-        "incorrect": {
-          "route1": -1,
-          "route2": -2,
-          "route3": 0,
-          "route4": 0,
-          "route5": -2
-        }
+        "route1": 1,
+        "route2": 0,
+        "route3": 1,
+        "route4": 0,
+        "route5": 0
       }
     },
     {
       "id": "q2",
-      "text": "ダミー設問2です",
+      "text": "駒場の街を収めた写真はどれ？",
       "choices": [
         {
           "id": 1,
-          "image": "/images/dummy.png"
+          "image": "/images/questions/3/kyoto.png"
         },
         {
           "id": 2,
-          "image": "/images/dummy.png"
+          "image": "/images/questions/3/hongo.png"
         },
         {
           "id": 3,
-          "image": "/images/dummy.png"
+          "image": "/images/questions/3/komaba.png"
         },
         {
           "id": 4,
-          "image": "/images/dummy.png"
+          "image": "/images/questions/3/kasiwa.png"
         }
       ],
-      "correctChoiceId": 2,
+      "correctChoiceId": 3,
       "scoring": {
-        "correct": {
-          "route1": 0,
-          "route2": 1,
-          "route3": -1,
-          "route4": -1,
-          "route5": 1
-        },
-        "incorrect": {
-          "route1": 0,
-          "route2": -1,
-          "route3": -2,
-          "route4": -1,
-          "route5": -1
-        }
+        "route1": 0,
+        "route2": 0,
+        "route3": 0,
+        "route4": 0,
+        "route5": 0
       }
     },
     {
       "id": "q3",
-      "text": "ダミー設問3です",
+      "text": "駒場にあるとある場所で鑑賞できるのはどれ？",
       "choices": [
         {
           "id": 1,
-          "image": "/images/dummy.png"
+          "image": "/images/stores/mingei/mingei.jpg"
         },
         {
           "id": 2,
-          "image": "/images/dummy.png"
+          "image": "/images/questions/4/1.jpg"
         },
         {
           "id": 3,
-          "image": "/images/dummy.png"
+          "image": "/images/questions/4/2.jpg"
         },
         {
           "id": 4,
-          "image": "/images/dummy.png"
+          "image": "/images/questions/4/3.jpg"
         }
       ],
-      "correctChoiceId": 3,
+      "correctChoiceId": 1,
       "scoring": {
-        "correct": {
-          "route1": -1,
-          "route2": 0,
-          "route3": 1,
-          "route4": 1,
-          "route5": 0
-        },
-        "incorrect": {
-          "route1": -2,
-          "route2": 0,
-          "route3": -1,
-          "route4": -1,
-          "route5": 0
-        }
+        "route1": 1,
+        "route2": 1,
+        "route3": 0,
+        "route4": 1,
+        "route5": 1
       }
     },
     {
       "id": "q4",
-      "text": "ダミー設問4です",
+      "text": "駒場にあるおしゃれなお店で食べられるのはどれ？",
       "choices": [
         {
           "id": 1,
-          "image": "/images/dummy.png"
+          "image": "/images/questions/2/1.jpg"
         },
         {
           "id": 2,
-          "image": "/images/dummy.png"
+          "image": "/images/questions/2/2.jpg"
         },
         {
           "id": 3,
-          "image": "/images/dummy.png"
+          "image": "/images/stores/thiramisu/thiramisu.jpg"
         },
         {
           "id": 4,
-          "image": "/images/dummy.png"
-        }
-      ],
-      "correctChoiceId": 4,
-      "scoring": {
-        "correct": {
-          "route1": 1,
-          "route2": 1,
-          "route3": -1,
-          "route4": -1,
-          "route5": -1
-        },
-        "incorrect": {
-          "route1": -1,
-          "route2": -1,
-          "route3": -2,
-          "route4": -2,
-          "route5": -1
-        }
-      }
-    },
-    {
-      "id": "q5",
-      "text": "ダミー設問5です",
-      "choices": [
-        {
-          "id": 1,
-          "image": "/images/dummy.png"
-        },
-        {
-          "id": 2,
-          "image": "/images/dummy.png"
-        },
-        {
-          "id": 3,
-          "image": "/images/dummy.png"
-        },
-        {
-          "id": 4,
-          "image": "/images/dummy.png"
-        }
-      ],
-      "correctChoiceId": 1,
-      "scoring": {
-        "correct": {
-          "route1": -1,
-          "route2": 1,
-          "route3": 0,
-          "route4": 0,
-          "route5": 1
-        },
-        "incorrect": {
-          "route1": -2,
-          "route2": -1,
-          "route3": 0,
-          "route4": 0,
-          "route5": -1
-        }
-      }
-    },
-    {
-      "id": "q6",
-      "text": "ダミー設問6です",
-      "choices": [
-        {
-          "id": 1,
-          "image": "/images/dummy.png"
-        },
-        {
-          "id": 2,
-          "image": "/images/dummy.png"
-        },
-        {
-          "id": 3,
-          "image": "/images/dummy.png"
-        },
-        {
-          "id": 4,
-          "image": "/images/dummy.png"
-        }
-      ],
-      "correctChoiceId": 2,
-      "scoring": {
-        "correct": {
-          "route1": 0,
-          "route2": -1,
-          "route3": 1,
-          "route4": 1,
-          "route5": -1
-        },
-        "incorrect": {
-          "route1": 0,
-          "route2": -2,
-          "route3": -1,
-          "route4": -1,
-          "route5": -2
-        }
-      }
-    },
-    {
-      "id": "q7",
-      "text": "ダミー設問7です",
-      "choices": [
-        {
-          "id": 1,
-          "image": "/images/dummy.png"
-        },
-        {
-          "id": 2,
-          "image": "/images/dummy.png"
-        },
-        {
-          "id": 3,
-          "image": "/images/dummy.png"
-        },
-        {
-          "id": 4,
-          "image": "/images/dummy.png"
+          "image": "/images/questions/2/3.jpg"
         }
       ],
       "correctChoiceId": 3,
       "scoring": {
-        "correct": {
-          "route1": 1,
-          "route2": -1,
-          "route3": -1,
-          "route4": 0,
-          "route5": 1
-        },
-        "incorrect": {
-          "route1": -1,
-          "route2": -2,
-          "route3": -2,
-          "route4": -1,
-          "route5": -1
-        }
+        "route1": 0,
+        "route2": 0,
+        "route3": 1,
+        "route4": 0,
+        "route5": 0
       }
     },
     {
-      "id": "q8",
-      "text": "ダミー設問8です",
+      "id": "q5",
+      "text": "駒場にある歴史的な建物は次のうちどれ？",
       "choices": [
         {
           "id": 1,
-          "image": "/images/dummy.png"
+          "image": "/images/questions/5/1.jpg"
         },
         {
           "id": 2,
-          "image": "/images/dummy.png"
+          "image": "https://www.syougai.metro.tokyo.lg.jp/sesaku/maedatei/images/history_img_01.jpg"
         },
         {
           "id": 3,
-          "image": "/images/dummy.png"
+          "image": "/images/questions/5/2.jpg"
         },
         {
           "id": 4,
-          "image": "/images/dummy.png"
-        }
-      ],
-      "correctChoiceId": 4,
-      "scoring": {
-        "correct": {
-          "route1": -1,
-          "route2": -1,
-          "route3": 1,
-          "route4": 1,
-          "route5": 0
-        },
-        "incorrect": {
-          "route1": -2,
-          "route2": -1,
-          "route3": -1,
-          "route4": -1,
-          "route5": -1
-        }
-      }
-    },
-    {
-      "id": "q9",
-      "text": "ダミー設問9です",
-      "choices": [
-        {
-          "id": 1,
-          "image": "/images/dummy.png"
-        },
-        {
-          "id": 2,
-          "image": "/images/dummy.png"
-        },
-        {
-          "id": 3,
-          "image": "/images/dummy.png"
-        },
-        {
-          "id": 4,
-          "image": "/images/dummy.png"
-        }
-      ],
-      "correctChoiceId": 1,
-      "scoring": {
-        "correct": {
-          "route1": 1,
-          "route2": 0,
-          "route3": -1,
-          "route4": -1,
-          "route5": 1
-        },
-        "incorrect": {
-          "route1": -1,
-          "route2": 0,
-          "route3": -2,
-          "route4": -2,
-          "route5": -1
-        }
-      }
-    },
-    {
-      "id": "q10",
-      "text": "ダミー設問10です",
-      "choices": [
-        {
-          "id": 1,
-          "image": "/images/dummy.png"
-        },
-        {
-          "id": 2,
-          "image": "/images/dummy.png"
-        },
-        {
-          "id": 3,
-          "image": "/images/dummy.png"
-        },
-        {
-          "id": 4,
-          "image": "/images/dummy.png"
+          "image": "/images/questions/5/3.jpg"
         }
       ],
       "correctChoiceId": 2,
       "scoring": {
-        "correct": {
-          "route1": -1,
-          "route2": 1,
-          "route3": 1,
-          "route4": 1,
-          "route5": -1
-        },
-        "incorrect": {
-          "route1": -2,
-          "route2": -1,
-          "route3": -1,
-          "route4": -1,
-          "route5": -2
-        }
+        "route1": 0,
+        "route2": 1,
+        "route3": 0,
+        "route4": 1,
+        "route5": 0
+      },
+      "citation": {
+        "label": "東京都生涯学習情報サイト",
+        "url": "https://www.syougai.metro.tokyo.lg.jp/sesaku/maedatei.html"
       }
     }
   ],
@@ -399,10 +163,10 @@
           "type": "spot",
           "name": "東京大学駒場博物館",
           "image": "/images/dummy.png",
-          "description": "旧制一高の図書館だった建物を活かした東大の博物館。美術と自然科学、両方の企画展が楽しめる。入館無料。",
+          "description": "東大の中にある、旧制一高の図書館だった建物を活かした博物館。",
           "stayMinutes": 30,
-          "hours": "10:00〜18:00（最終入館17:30）／火曜休館",
-          "websiteUrl": "http://museum.c.u-tokyo.ac.jp"
+          "hours": "月〜金 10:00〜17:00（休館期間あり）",
+          "websiteUrl": "https://museum.c.u-tokyo.ac.jp/"
         },
         {
           "type": "move",
@@ -413,10 +177,10 @@
         {
           "type": "spot",
           "name": "日本民藝館",
-          "image": "/images/dummy.png",
-          "description": "柳宗悦が創設した民藝運動の拠点。生活の中の美しい道具たちに出会える、駒場を代表する文化施設。",
-          "stayMinutes": 40,
-          "hours": "10:00〜17:00（最終入館16:30）／月曜休館",
+          "image": "/images/stores/mingei/mingei.jpg",
+          "description": "柳宗悦らによって開設された民藝運動の本拠。「民藝」という新しい美の概念の普及と「美の生活化」を目指す。生活の中の美しい道具たちに出会える、駒場を代表する文化施設。",
+          "stayMinutes": 60,
+          "hours": "火〜日 10:00〜17:00",
           "websiteUrl": "https://mingeikan.or.jp/",
           "instagramUrl": "https://www.instagram.com/nihon_mingeikan/"
         },
@@ -430,8 +194,8 @@
           "type": "spot",
           "name": "Kitchen & Bar Oaks",
           "image": "/images/dummy.png",
-          "description": "東大生に長年愛される定食バー。ボリューム満点のチキンカツなど、夜も定食が楽しめる貴重な一軒。",
-          "stayMinutes": 40,
+          "description": "東大生に長年愛される定食やさん。ボリューム満点のチキンカツなど、がっつりご飯が楽しめる一軒。",
+          "stayMinutes": 60,
           "hours": "月〜土 11:30〜13:45, 18:30〜21:45"
         }
       ]
@@ -443,8 +207,8 @@
           "type": "spot",
           "name": "Port tomigaya",
           "image": "/images/dummy.png",
-          "description": "富ヶ谷の路地にたたずむ、おしゃれなカフェ&バー。ゆったりとした時間を過ごせる隠れ家的スポット。",
-          "stayMinutes": 25,
+          "description": "駒場キャンパスの北門を抜けた富ヶ谷の路地にたたずむオシャレカフェ。ゆったりとした時間を過ごせる隠れ家的スポット。",
+          "stayMinutes": 60,
           "hours": "月〜日 08:00〜18:00",
           "instagramUrl": "https://www.instagram.com/port.tomigaya/"
         },
@@ -458,10 +222,10 @@
           "type": "spot",
           "name": "BONDI COFFEE SANDWICHES",
           "image": "/images/dummy.png",
-          "description": "オーストラリア発、こだわりのサンドイッチとコーヒーが楽しめる「裏渋谷」の人気カフェ。",
-          "stayMinutes": 20,
+          "description": "自家製全粒粉パンの絶品サンドウィッチとスペシャルティコーヒーから、アサイーまで健康的な食事が楽しめる人気洋風カフェ。",
+          "stayMinutes": 60,
           "hours": "月〜日 07:00〜19:00",
-          "instagramUrl": "https://www.instagram.com/bondicoffeesandwiches/"
+          "instagramUrl": "https://www.instagram.com/p/DYMui42H6dh/"
         },
         {
           "type": "move",
@@ -473,8 +237,8 @@
           "type": "spot",
           "name": "旧前田侯爵邸洋館",
           "image": "/images/dummy.png",
-          "description": "旧加賀藩主・前田家の邸宅だった重要文化財の洋館。昭和初期の重厚な建築美を間近で見学できる。",
-          "stayMinutes": 25,
+          "description": "旧加賀藩主前田家の邸宅だった重要文化財の洋館。昭和初期の建築を間近で見学できる。",
+          "stayMinutes": 60,
           "hours": "水〜日 09:00〜16:00",
           "websiteUrl": "https://www.syougai.metro.tokyo.lg.jp/sesaku/maedatei.html"
         },
@@ -488,8 +252,8 @@
           "type": "spot",
           "name": "旧前田侯爵邸和館",
           "image": "/images/dummy.png",
-          "description": "洋館と対をなす数寄屋造りの和館。庭園越しに眺める佇まいが美しい、駒場公園内の隠れた名所。",
-          "stayMinutes": 20,
+          "description": "和室や茶室、庭園が利用できる、国の重要文化財。旧加賀藩主前田家の邸宅だった当時の様子がVRで体験できるらしい。",
+          "stayMinutes": 30,
           "hours": "火〜日 09:00〜16:00",
           "websiteUrl": "https://www.syougai.metro.tokyo.lg.jp/sesaku/maedatei.html"
         },
@@ -502,10 +266,10 @@
         {
           "type": "spot",
           "name": "日本民藝館",
-          "image": "/images/dummy.png",
-          "description": "柳宗悦が創設した民藝運動の拠点。生活の中の美しい道具たちに出会える、駒場を代表する文化施設。",
-          "stayMinutes": 40,
-          "hours": "10:00〜17:00（最終入館16:30）／月曜休館",
+          "image": "/images/stores/mingei/mingei.jpg",
+          "description": "柳宗悦らによって開設された民藝運動の本拠。「民藝」という新しい美の概念の普及と「美の生活化」を目指す。生活の中の美しい道具たちに出会える、駒場を代表する文化施設。",
+          "stayMinutes": 60,
+          "hours": "火〜日 10:00〜17:00",
           "websiteUrl": "https://mingeikan.or.jp/",
           "instagramUrl": "https://www.instagram.com/nihon_mingeikan/"
         }
@@ -518,9 +282,9 @@
           "type": "spot",
           "name": "雅にぃ",
           "image": "/images/stores/masani/masani1.png",
-          "description": "駒場東大前駅前の小さなたい焼き店。あずき・カスタードなど日替わりの味も楽しみな一品。",
+          "description": "駒場東大前駅から徒歩30秒の小さなたい焼き店。",
           "stayMinutes": 10,
-          "hours": "不定休／12:00開店、14〜15時休憩、15時再開、なくなり次第終了",
+          "hours": "不定休／12:00〜14:00, 15:00〜（食材無くなり次第終了）",
           "instagramUrl": "https://www.instagram.com/masanny_taiyaki/"
         },
         {
@@ -533,8 +297,8 @@
           "type": "spot",
           "name": "TIRAMISU HOME MADE",
           "image": "/images/stores/thiramisu/thiramisu.jpg",
-          "description": "都内初のレアティラミス専門店。ふわとろの口どけが評判で、コーヒーと一緒に一息つける。",
-          "stayMinutes": 15,
+          "description": "スイーツ好き必見のレアティラミス専門店。ティラミスとの出会いがきっとあなたの素敵な時間となりますように。",
+          "stayMinutes": 30,
           "hours": "月〜土 11:00〜18:45",
           "websiteUrl": "https://tiramisu-home-made.storeinfo.jp/pages/1798828/page_201804020559",
           "instagramUrl": "https://www.instagram.com/tiramisu_home_made/"
@@ -549,26 +313,10 @@
           "type": "spot",
           "name": "菱田屋",
           "image": "/images/dummy.png",
-          "description": "創業100年を超える老舗食堂。生姜焼きやアジフライなど、がっつり系定食が揃う駒場の名物店。",
-          "stayMinutes": 35,
-          "hours": "月〜金 11:30〜14:00, 17:30〜22:00／土 17:30〜22:00（日・祝休）",
-          "instagramUrl": "https://www.instagram.com/hishidaya/"
-        },
-        {
-          "type": "move",
-          "moveMinutes": 15,
-          "transportMode": "徒歩",
-          "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&origin=%E8%8F%B1%E7%94%B0%E5%B1%8B%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E7%9B%AE%E9%BB%92%E5%8C%BA%E9%A7%92%E5%A0%B41-27-1&destination=%E6%97%A5%E6%9C%AC%E6%B0%91%E8%97%9D%E9%A4%A8%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E7%9B%AE%E9%BB%92%E5%8C%BA%E9%A7%92%E5%A0%B44-3-33&travelmode=walking"
-        },
-        {
-          "type": "spot",
-          "name": "日本民藝館",
-          "image": "/images/dummy.png",
-          "description": "柳宗悦が創設した民藝運動の拠点。生活の中の美しい道具たちに出会える、駒場を代表する文化施設。",
-          "stayMinutes": 40,
-          "hours": "10:00〜17:00（最終入館16:30）／月曜休館",
-          "websiteUrl": "https://mingeikan.or.jp/",
-          "instagramUrl": "https://www.instagram.com/nihon_mingeikan/"
+          "description": "明治時代に創業し100年以上の歴史がある定食屋さん。バラエティに富んだ定食をがっつり食べられる名店。",
+          "stayMinutes": 60,
+          "hours": "月〜金 11:30〜14:00, 17:30〜22:00／土 17:30〜22:00",
+          "instagramUrl": "https://www.instagram.com/hishidaya/?hl=ja"
         }
       ]
     },
@@ -579,10 +327,11 @@
           "type": "spot",
           "name": "日本近代文学館",
           "image": "/images/stores/bungakukan/bungakukan.jpg",
-          "description": "近代文学の資料を集めた文学館。駒場公園の緑の中に佇む、静かに過ごせる読書好き必訪のスポット。",
-          "stayMinutes": 30,
-          "hours": "火〜土 9:30〜16:30（入館16:00まで）",
-          "websiteUrl": "https://www.bungakukan.or.jp/guidance/access/"
+          "description": "近代文学の資料を集めた文学館。駒場公園の緑の中に佇む、文学部の学生は必訪のスポット。",
+          "stayMinutes": 60,
+          "hours": "火〜土 9:30〜16:30",
+          "websiteUrl": "https://www.bungakukan.or.jp/guidance/access/",
+          "instagramUrl": "https://www.instagram.com/explore/locations/34333423/ri-ben-jin-dai-wen-xue-guan/"
         },
         {
           "type": "move",
@@ -594,8 +343,8 @@
           "type": "spot",
           "name": "旧前田侯爵邸洋館",
           "image": "/images/dummy.png",
-          "description": "旧加賀藩主・前田家の邸宅だった重要文化財の洋館。昭和初期の重厚な建築美を間近で見学できる。",
-          "stayMinutes": 25,
+          "description": "旧加賀藩主前田家の邸宅だった重要文化財の洋館。昭和初期の建築を間近で見学できる。",
+          "stayMinutes": 60,
           "hours": "水〜日 09:00〜16:00",
           "websiteUrl": "https://www.syougai.metro.tokyo.lg.jp/sesaku/maedatei.html"
         },
@@ -609,8 +358,8 @@
           "type": "spot",
           "name": "旧前田侯爵邸和館",
           "image": "/images/dummy.png",
-          "description": "洋館と対をなす数寄屋造りの和館。庭園越しに眺める佇まいが美しい、駒場公園内の隠れた名所。",
-          "stayMinutes": 20,
+          "description": "和室や茶室、庭園が利用できる、国の重要文化財。旧加賀藩主前田家の邸宅だった当時の様子がVRで体験できるらしい。",
+          "stayMinutes": 30,
           "hours": "火〜日 09:00〜16:00",
           "websiteUrl": "https://www.syougai.metro.tokyo.lg.jp/sesaku/maedatei.html"
         },
@@ -623,10 +372,10 @@
         {
           "type": "spot",
           "name": "日本民藝館",
-          "image": "/images/dummy.png",
-          "description": "柳宗悦が創設した民藝運動の拠点。生活の中の美しい道具たちに出会える、駒場を代表する文化施設。",
-          "stayMinutes": 40,
-          "hours": "10:00〜17:00（最終入館16:30）／月曜休館",
+          "image": "/images/stores/mingei/mingei.jpg",
+          "description": "柳宗悦らによって開設された民藝運動の本拠。「民藝」という新しい美の概念の普及と「美の生活化」を目指す。生活の中の美しい道具たちに出会える、駒場を代表する文化施設。",
+          "stayMinutes": 60,
+          "hours": "火〜日 10:00〜17:00",
           "websiteUrl": "https://mingeikan.or.jp/",
           "instagramUrl": "https://www.instagram.com/nihon_mingeikan/"
         }
@@ -639,7 +388,7 @@
           "type": "spot",
           "name": "Le Ressort",
           "image": "/images/stores/le_ressort/le_ressort.png",
-          "description": "駒場東大前駅すぐの人気ベーカリー。上質な素材で作るパンを求めて行列ができることも。",
+          "description": "駒場東大前駅前の大人気ベーカリー。駒場キャンパスの門の中まで行列ができることも！？",
           "stayMinutes": 15,
           "hours": "火〜日 9:00〜17:00",
           "websiteUrl": "https://leressort.jp/",
@@ -655,9 +404,9 @@
           "type": "spot",
           "name": "駒場野公園",
           "image": "/images/dummy.png",
-          "description": "「ケルネル田んぼ」など自然豊かな公園。駒場東大前駅から徒歩1分とは思えない、のんびり散策できる穴場。",
-          "stayMinutes": 20,
-          "hours": "常時開放（公園のため入園時間の定めなし）",
+          "description": "都心に佇む自然豊かな公園。都会の喧騒からのデトックスに。",
+          "stayMinutes": 10,
+          "hours": "常時開放",
           "websiteUrl": "https://www.city.meguro.tokyo.jp/douro/shisetsu/sports/komabano.html"
         },
         {
@@ -669,10 +418,10 @@
         {
           "type": "spot",
           "name": "日本民藝館",
-          "image": "/images/dummy.png",
-          "description": "柳宗悦が創設した民藝運動の拠点。生活の中の美しい道具たちに出会える、駒場を代表する文化施設。",
-          "stayMinutes": 40,
-          "hours": "10:00〜17:00（最終入館16:30）／月曜休館",
+          "image": "/images/stores/mingei/mingei.jpg",
+          "description": "柳宗悦らによって開設された民藝運動の本拠。「民藝」という新しい美の概念の普及と「美の生活化」を目指す。生活の中の美しい道具たちに出会える、駒場を代表する文化施設。",
+          "stayMinutes": 60,
+          "hours": "火〜日 10:00〜17:00",
           "websiteUrl": "https://mingeikan.or.jp/",
           "instagramUrl": "https://www.instagram.com/nihon_mingeikan/"
         }
@@ -680,16 +429,11 @@
     }
   },
   "comments": {
-    "0": "まだまだこれから！駒場デビューはこれからだ。",
-    "1": "駒場のことをもっと知りたくなったはず。",
-    "2": "少しずつ駒場の顔が見えてきました。",
-    "3": "駒場ビギナー卒業まであと一歩。",
-    "4": "駒場のことが気になり始めた証拠です。",
-    "5": "折り返し地点、駒場理解度50%。",
-    "6": "駒場のことをそこそこ知っています。",
-    "7": "駒場通と呼んでもいいレベルです。",
-    "8": "かなりの駒場マスターです。",
-    "9": "駒場博士まであと一問！",
-    "10": "完璧です、あなたは駒場博士！"
+    "0": "駒場のこと、知らなすぎじゃない？",
+    "1": "駒場のことを知る伸び代いっぱい！",
+    "2": "まだまだこれからですね",
+    "3": "駒場のディープな顔が見えてきた？",
+    "4": "あと一歩で駒場玄人",
+    "5": "完璧です、あなたは駒場住み！"
   }
 }

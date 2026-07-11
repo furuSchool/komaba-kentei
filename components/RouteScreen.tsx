@@ -1,8 +1,8 @@
 "use client";
 
 import { useState } from "react";
-import { withBasePath } from "@/lib/paths";
 import type { RouteData, RouteKey } from "@/lib/types";
+import ClipSafeImage from "./ClipSafeImage";
 import { InstagramIcon } from "./icons/BrandIcons";
 
 function WebsiteIcon({ className }: { className?: string }) {
@@ -111,10 +111,10 @@ export default function RouteScreen({
           stop.type === "spot" ? (
             <div key={stopIndex} className="relative mb-6 flex gap-4">
               <span className="absolute -left-9 top-1 h-4 w-4 rounded-full border-4 border-orange-600 bg-white" />
-              <img
-                src={withBasePath(stop.image)}
+              <ClipSafeImage
+                src={stop.image}
                 alt={stop.name}
-                className="h-20 w-20 shrink-0 rounded-2xl object-cover shadow-sm"
+                className="h-20 w-20 shrink-0 rounded-2xl shadow-sm"
               />
               <div className="flex-1 text-left">
                 <div className="flex items-start justify-between gap-2">

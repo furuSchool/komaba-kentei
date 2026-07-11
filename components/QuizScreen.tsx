@@ -1,8 +1,8 @@
 "use client";
 
 import { useState } from "react";
-import { withBasePath } from "@/lib/paths";
 import type { Question } from "@/lib/types";
+import ClipSafeImage from "./ClipSafeImage";
 
 interface Props {
   question: Question;
@@ -71,10 +71,10 @@ export default function QuizScreen({
               <span className="absolute -left-2 -top-2 z-10 flex h-10 w-10 items-center justify-center rounded-full bg-white text-base font-extrabold text-orange-600 shadow-md">
                 {CHOICE_LABELS[index]}
               </span>
-              <img
-                src={withBasePath(choice.image)}
+              <ClipSafeImage
+                src={choice.image}
                 alt={`選択肢${CHOICE_LABELS[index]}`}
-                className="h-full w-full object-cover"
+                className="h-full w-full"
               />
             </button>
           );
@@ -84,6 +84,19 @@ export default function QuizScreen({
       <p className="text-center text-sm font-medium text-zinc-600">
         💡 タップして選択してください
       </p>
+      {question.citation && (
+        <p className="-mt-4 text-center text-[10px] text-zinc-400">
+          画像出典:{" "}
+          <a
+            href={question.citation.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline underline-offset-2"
+          >
+            {question.citation.label}
+          </a>
+        </p>
+      )}
 
       <button
         onClick={handleNext}
