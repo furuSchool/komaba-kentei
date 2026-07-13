@@ -130,15 +130,15 @@
         },
         {
           "id": 2,
-          "image": "/images/questions/5/2.PNG"
+          "image": "/images/questions/5/2.png"
         },
         {
           "id": 3,
-          "image": "/images/questions/5/answer.JPG"
+          "image": "/images/questions/5/answer.jpg"
         },
         {
           "id": 4,
-          "image": "/images/questions/5/3.JPG"
+          "image": "/images/questions/5/3.jpg"
         }
       ],
       "correctChoiceId": 3,
