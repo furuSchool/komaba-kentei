@@ -50,11 +50,14 @@ export function pickRecommendedRoute(
   , ROUTE_KEYS[0]);
 }
 
-/** Buckets the answer rate into `tierCount` tiers by flooring rate*tierCount,
- * so the comment set can grow/shrink (quiz.comments) without touching this logic. */
+/** Buckets the answer rate into `tierCount` tiers (0..tierCount-1) by flooring
+ * rate*(tierCount-1), so the top tier is reserved for a perfect score and
+ * doesn't also swallow a near-perfect one (e.g. 90% showing the "flawless"
+ * comment meant for 100%). The comment set can still grow/shrink freely
+ * (quiz.comments) without touching this logic. */
 export function calcCommentTier(answers: Answer[], tierCount: number): number {
   const rate = calcCorrectCount(answers) / answers.length;
-  return Math.min(tierCount - 1, Math.floor(rate * tierCount));
+  return Math.min(tierCount - 1, Math.floor(rate * (tierCount - 1)));
 }
 
 export function getComment(quiz: QuizData, tier: number): string {
