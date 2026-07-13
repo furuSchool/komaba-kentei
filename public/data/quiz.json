@@ -122,57 +122,23 @@
     },
     {
       "id": "q5",
-      "text": "駒場にある歴史的な建物は次のうちどれ？",
-      "choices": [
-        {
-          "id": 1,
-          "image": "/images/questions/5/1.jpg"
-        },
-        {
-          "id": 2,
-          "image": "https://www.syougai.metro.tokyo.lg.jp/sesaku/maedatei/images/history_img_01.jpg"
-        },
-        {
-          "id": 3,
-          "image": "/images/questions/5/2.jpg"
-        },
-        {
-          "id": 4,
-          "image": "/images/questions/5/3.jpg"
-        }
-      ],
-      "correctChoiceId": 2,
-      "scoring": {
-        "route1": 0,
-        "route2": 1,
-        "route3": 0,
-        "route4": 1,
-        "route5": 0
-      },
-      "citation": {
-        "label": "東京都生涯学習情報サイト",
-        "url": "https://www.syougai.metro.tokyo.lg.jp/sesaku/maedatei.html"
-      }
-    },
-    {
-      "id": "q6",
       "text": "駒場にある重要文化財として正しいものはどれ？",
       "choices": [
         {
           "id": 1,
-          "image": "/images/questions/6/1.png"
+          "image": "/images/questions/5/1.png"
         },
         {
           "id": 2,
-          "image": "/images/questions/6/2.PNG"
+          "image": "/images/questions/5/2.PNG"
         },
         {
           "id": 3,
-          "image": "/images/questions/6/answer.JPG"
+          "image": "/images/questions/5/answer.JPG"
         },
         {
           "id": 4,
-          "image": "/images/questions/6/3.JPG"
+          "image": "/images/questions/5/3.JPG"
         }
       ],
       "correctChoiceId": 3,
@@ -185,24 +151,24 @@
       }
     },
     {
-      "id": "q7",
+      "id": "q6",
       "text": "駒場東大前のホームから見える景色はどれ？",
       "choices": [
         {
           "id": 1,
-          "image": "/images/questions/7/1.JPG"
+          "image": "/images/questions/6/1.JPG"
         },
         {
           "id": 2,
-          "image": "/images/questions/7/answer.JPG"
+          "image": "/images/questions/6/answer.JPG"
         },
         {
           "id": 3,
-          "image": "/images/questions/7/2.JPG"
+          "image": "/images/questions/6/2.JPG"
         },
         {
           "id": 4,
-          "image": "/images/questions/7/3.JPG"
+          "image": "/images/questions/6/3.JPG"
         }
       ],
       "correctChoiceId": 2,
@@ -215,24 +181,24 @@
       }
     },
     {
-      "id": "q8",
+      "id": "q7",
       "text": "これらの外国風の景色のうち、駒場でないものはどれ？",
       "choices": [
         {
           "id": 1,
-          "image": "/images/questions/8/Answer.jpg"
+          "image": "/images/questions/7/answer.JPG"
         },
         {
           "id": 2,
-          "image": "/images/questions/8/1.jpg"
+          "image": "/images/questions/7/1.JPG"
         },
         {
           "id": 3,
-          "image": "/images/questions/8/2.jpg"
+          "image": "/images/questions/7/2.JPG"
         },
         {
           "id": 4,
-          "image": "/images/questions/8/3.jpg"
+          "image": "/images/questions/7/3.JPG"
         }
       ],
       "correctChoiceId": 1,
@@ -245,38 +211,38 @@
       }
     },
     {
-      "id": "q9",
+      "id": "q8",
       "text": "駒場について、正しくない記述はどれ？",
       "choices": [
         {
           "id": 1,
-          "image": "/images/questions/9/answer.png"
+          "image": "/images/questions/8/answer.png"
         },
         {
           "id": 2,
-          "image": "/images/questions/9/1.png"
+          "image": "/images/questions/8/1.png"
         },
         {
           "id": 3,
-          "image": "/images/questions/9/2.png"
+          "image": "/images/questions/8/2.png"
         },
         {
           "id": 4,
-          "image": "/images/questions/9/3.png"
+          "image": "/images/questions/8/3.png"
         }
       ],
       "correctChoiceId": 1,
       "scoring": {
         "route1": 0,
-        "route2": 2,
-        "route3": 2,
+        "route2": 1,
+        "route3": 1,
         "route4": 0,
         "route5": 1
       }
     },
     {
-      "id": "q10",
-      "text": "駒場で楽しめるのは次のうちどれ？",
+      "id": "q9",
+      "text": "駒場で楽しめる文化施設は次のうちどれ？",
       "choices": [
         {
           "id": 1,
@@ -301,6 +267,36 @@
         "route2": 0,
         "route3": 0,
         "route4": 1,
+        "route5": 0
+      }
+    },
+    {
+      "id": "q10",
+      "text": "駒場で楽しめるカフェは次のうちどれ？",
+      "choices": [
+        {
+          "id": 1,
+          "image": "/images/questions/9/1.jpg"
+        },
+        {
+          "id": 2,
+          "image": "/images/stores/bondi/bondi.jpg"
+        },
+        {
+          "id": 3,
+          "image": "/images/questions/9/2.jpg"
+        },
+        {
+          "id": 4,
+          "image": "/images/questions/9/3.jpg"
+        }
+      ],
+      "correctChoiceId": 2,
+      "scoring": {
+        "route1": 0,
+        "route2": 1,
+        "route3": 0,
+        "route4": 0,
         "route5": 0
       }
     }
