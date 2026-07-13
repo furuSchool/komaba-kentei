@@ -26,10 +26,18 @@ export default function ShareButtons({ percent, comment }: Props) {
     return new File([blob], FILE_NAME, { type: "image/png" });
   }
 
-  /** Tries the OS share sheet with the result image attached (works for
-   * X/Instagram/LINE/BeReal alike on mobile). Returns true if it was handled
-   * (shared or the user cancelled), false if the caller should fall back. */
-  async function shareImageNative(): Promise<boolean> {
+  /**
+   * Hands off to the OS share sheet — the standard way to get an image into
+   * apps (Instagram/LINE/X/BeReal) that have no web share URL of their own.
+   * Tries image+text first, then falls back to a text-only native share
+   * (still a single native share sheet, just without the picture attached).
+   * Returns true once the OS flow has run (shared or user-cancelled) so the
+   * caller knows not to fall further back.
+   */
+  async function shareViaOsSheet(): Promise<boolean> {
+    if (typeof navigator === "undefined" || typeof navigator.share !== "function") {
+      return false;
+    }
     try {
       const file = await getShareFile();
       if (navigator.canShare?.({ files: [file] })) {
@@ -39,26 +47,26 @@ export default function ShareButtons({ percent, comment }: Props) {
     } catch (err) {
       if ((err as Error)?.name === "AbortError") return true;
     }
+    try {
+      await navigator.share({ text: shareText, url: shareUrl });
+      return true;
+    } catch (err) {
+      if ((err as Error)?.name === "AbortError") return true;
+    }
     return false;
   }
 
-  async function downloadImageFallback(instruction: string) {
+  async function copyTextFallback(appName: string) {
     try {
-      const file = await getShareFile();
-      const url = URL.createObjectURL(file);
-      const a = document.createElement("a");
-      a.href = url;
-      a.download = FILE_NAME;
-      a.click();
-      URL.revokeObjectURL(url);
-      notify(instruction);
+      await navigator.clipboard?.writeText(`${shareText} ${shareUrl}`);
+      notify(`投稿文をコピーしました。${appName}に貼り付けてご利用ください。`);
     } catch {
-      notify("画像の生成に失敗しました");
+      notify("共有に対応していない端末です。スマートフォンでお試しください。");
     }
   }
 
   async function shareToX() {
-    if (await shareImageNative()) return;
+    if (await shareViaOsSheet()) return;
     const intentUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(
       shareText
     )}&url=${encodeURIComponent(shareUrl)}`;
@@ -66,7 +74,7 @@ export default function ShareButtons({ percent, comment }: Props) {
   }
 
   async function shareToLine() {
-    if (await shareImageNative()) return;
+    if (await shareViaOsSheet()) return;
     const lineUrl = `https://social-plugins.line.me/lineit/share?url=${encodeURIComponent(
       shareUrl
     )}&text=${encodeURIComponent(shareText)}`;
@@ -74,17 +82,13 @@ export default function ShareButtons({ percent, comment }: Props) {
   }
 
   async function shareToInstagram() {
-    if (await shareImageNative()) return;
-    await downloadImageFallback(
-      "画像を保存しました。Instagramアプリに貼り付けてご利用ください。"
-    );
+    if (await shareViaOsSheet()) return;
+    await copyTextFallback("Instagram");
   }
 
   async function shareToBeReal() {
-    if (await shareImageNative()) return;
-    await downloadImageFallback(
-      "画像を保存しました。BeRealアプリの投稿画面から貼り付けてご利用ください。"
-    );
+    if (await shareViaOsSheet()) return;
+    await copyTextFallback("BeReal");
   }
 
   const items = [
