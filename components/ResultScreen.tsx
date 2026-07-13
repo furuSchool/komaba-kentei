@@ -48,7 +48,7 @@ export default function ResultScreen({ percent, comment, onShowRoute }: Props) {
 
       <div className="relative w-full max-w-xs overflow-hidden rounded-2xl text-left text-white shadow-lg">
         <img
-          src={withBasePath("/images/others/yasuda.jpg")}
+          src={withBasePath("/images/others/komaba.jpg")}
           alt=""
           className="absolute inset-0 h-full w-full object-cover"
         />

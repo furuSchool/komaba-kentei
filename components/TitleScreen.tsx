@@ -8,7 +8,7 @@ export default function TitleScreen({ onStart }: Props) {
   return (
     <div className="relative flex flex-1 flex-col overflow-hidden">
       <img
-        src={withBasePath("/images/others/yasuda.jpg")}
+        src={withBasePath("/images/others/komaba.jpg")}
         alt=""
         className="absolute inset-0 h-full w-full object-cover"
       />

@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import { withBasePath } from "@/lib/paths";
 import {
-  calcCorrectCount,
+  calcCommentTier,
   calcUnderstandingPercent,
   gradeAnswers,
   getComment,
@@ -89,9 +89,8 @@ export default function Home() {
   }
 
   if (screen === "result") {
-    const correctCount = calcCorrectCount(answers);
     const percent = calcUnderstandingPercent(answers);
-    const comment = getComment(quiz, correctCount);
+    const comment = getComment(quiz, calcCommentTier(answers));
     return (
       <ResultScreen
         percent={percent}
