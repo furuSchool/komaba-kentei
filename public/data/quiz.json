@@ -292,7 +292,7 @@
         },
         {
           "id": 4,
-          "image": "/images/questions/10/3.jpg"
+          "image": "/images/questions/10/3.png"
         }
       ],
       "correctChoiceId": 3,
@@ -336,7 +336,7 @@
         },
         {
           "type": "move",
-          "moveMinutes": 7,
+          "moveMinutes": 6,
           "transportMode": "徒歩",
           "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&origin=%E6%97%A5%E6%9C%AC%E6%B0%91%E8%97%9D%E9%A4%A8%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E7%9B%AE%E9%BB%92%E5%8C%BA%E9%A7%92%E5%A0%B44-3-33&destination=Kitchen%20%26%20Bar%20Oaks%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E7%9B%AE%E9%BB%92%E5%8C%BA%E9%A7%92%E5%A0%B42-1-3&travelmode=walking"
         },
@@ -379,7 +379,7 @@
         },
         {
           "type": "move",
-          "moveMinutes": 12,
+          "moveMinutes": 11,
           "transportMode": "徒歩",
           "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&origin=BONDI%20COFFEE%20SANDWICHES%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%B8%8B%E8%B0%B7%E5%8C%BA%E5%AF%8C%E3%83%B6%E8%B0%B72-22-8&destination=%E6%97%A5%E6%9C%AC%E6%B0%91%E8%97%9D%E9%A4%A8%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E7%9B%AE%E9%BB%92%E5%8C%BA%E9%A7%92%E5%A0%B44-3-33&travelmode=walking"
         },
@@ -403,13 +403,13 @@
           "name": "雅にぃ",
           "image": "/images/stores/masani/masani1.png",
           "description": "駒場東大前駅から徒歩30秒の小さなたい焼き店。",
-          "stayMinutes": 10,
+          "stayMinutes": 15,
           "hours": "不定休／12:00〜14:00, 15:00〜（食材無くなり次第終了）",
           "instagramUrl": "https://www.instagram.com/masanny_taiyaki/"
         },
         {
           "type": "move",
-          "moveMinutes": 3,
+          "moveMinutes": 2,
           "transportMode": "徒歩",
           "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&origin=%E9%9B%85%E3%81%AB%E3%81%83%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E7%9B%AE%E9%BB%92%E5%8C%BA%E9%A7%92%E5%A0%B42-1-3&destination=TIRAMISU%20HOME%20MADE%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E7%9B%AE%E9%BB%92%E5%8C%BA%E9%A7%92%E5%A0%B41-33-6&travelmode=walking"
         },
@@ -501,7 +501,7 @@
         },
         {
           "type": "move",
-          "moveMinutes": 5,
+          "moveMinutes": 4,
           "transportMode": "徒歩",
           "googleMapsUrl": "https://www.google.com/maps/dir/?api=1&origin=Le%20Ressort%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E7%9B%AE%E9%BB%92%E5%8C%BA%E9%A7%92%E5%A0%B43-11-6&destination=%E9%A7%92%E5%A0%B4%E9%87%8E%E5%85%AC%E5%9C%92%20%E6%9D%B1%E4%BA%AC%E9%83%BD%E7%9B%AE%E9%BB%92%E5%8C%BA%E9%A7%92%E5%A0%B42-19-70&travelmode=walking"
         },
@@ -535,10 +535,13 @@
   },
   "comments": {
     "0": "駒場のこと、知らなすぎじゃない？",
-    "1": "駒場のことを知る伸び代いっぱい！",
-    "2": "まだまだこれからですね",
-    "3": "駒場のディープな顔が見えてきた？",
-    "4": "あと一歩で駒場玄人",
-    "5": "完璧です、あなたは駒場住み！"
+    "1": "駒場って、良い所なんだよ。",
+    "2": "まだまだ駒場ビギナー！",
+    "3": "駒場のことを知る伸び代いっぱい！",
+    "4": "まだまだこれからですね。",
+    "5": "駒場のディープな顔が見えてきた？",
+    "6": "駒場のもう一歩奥へ！",
+    "7": "あと一歩で駒場玄人！",
+    "8": "完璧です！あなたは駒場住み！"
   }
 }

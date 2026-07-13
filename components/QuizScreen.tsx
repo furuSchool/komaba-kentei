@@ -33,9 +33,6 @@ export default function QuizScreen({
   return (
     <div className="flex flex-1 flex-col gap-6 bg-zinc-50 px-5 py-8">
       <div>
-        <p className="mb-3 text-center text-xl font-bold text-zinc-900">
-          Question {questionNumber} / {totalQuestions}
-        </p>
         <div className="flex gap-2">
           {Array.from({ length: totalQuestions }).map((_, i) => (
             <div
@@ -81,9 +78,6 @@ export default function QuizScreen({
         })}
       </div>
 
-      <p className="text-center text-sm font-medium text-zinc-600">
-        💡 タップして選択してください
-      </p>
       {question.citation && (
         <p className="-mt-4 text-center text-[10px] text-zinc-400">
           画像出典:{" "}

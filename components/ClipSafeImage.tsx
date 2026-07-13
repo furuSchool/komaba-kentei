@@ -6,8 +6,8 @@ interface Props {
   className: string;
 }
 
-/** Spot photos we don't have crop rights for — must be shown in full, never clipped. */
-const NO_CROP_MARKERS = ["/images/stores/mingei/"];
+/** Spot/choice photos that must be shown in full, never clipped (crop rights, or text that would be cut off). */
+const NO_CROP_MARKERS = ["/images/stores/mingei/", "/images/questions/9/"];
 
 /**
  * Drop-in replacement for a cropped <img>. Most photos fill their box with

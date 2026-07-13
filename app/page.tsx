@@ -90,7 +90,10 @@ export default function Home() {
 
   if (screen === "result") {
     const percent = calcUnderstandingPercent(answers);
-    const comment = getComment(quiz, calcCommentTier(answers));
+    const comment = getComment(
+      quiz,
+      calcCommentTier(answers, Object.keys(quiz.comments).length)
+    );
     return (
       <ResultScreen
         percent={percent}

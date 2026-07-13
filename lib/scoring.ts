@@ -50,13 +50,11 @@ export function pickRecommendedRoute(
   , ROUTE_KEYS[0]);
 }
 
-const COMMENT_TIERS = 6;
-
-/** Buckets the answer rate into 6 tiers (0-5) by flooring rate*6, so the
- * comment set stays fixed at 6 stages regardless of the question count. */
-export function calcCommentTier(answers: Answer[]): number {
+/** Buckets the answer rate into `tierCount` tiers by flooring rate*tierCount,
+ * so the comment set can grow/shrink (quiz.comments) without touching this logic. */
+export function calcCommentTier(answers: Answer[], tierCount: number): number {
   const rate = calcCorrectCount(answers) / answers.length;
-  return Math.min(COMMENT_TIERS - 1, Math.floor(rate * COMMENT_TIERS));
+  return Math.min(tierCount - 1, Math.floor(rate * tierCount));
 }
 
 export function getComment(quiz: QuizData, tier: number): string {
