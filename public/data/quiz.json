@@ -243,6 +243,66 @@
         "route4": 0,
         "route5": 0
       }
+    },
+    {
+      "id": "q9",
+      "text": "駒場について、正しくない記述はどれ？",
+      "choices": [
+        {
+          "id": 1,
+          "image": "/images/questions/9/answer.png"
+        },
+        {
+          "id": 2,
+          "image": "/images/questions/9/1.png"
+        },
+        {
+          "id": 3,
+          "image": "/images/questions/9/2.png"
+        },
+        {
+          "id": 4,
+          "image": "/images/questions/9/3.png"
+        }
+      ],
+      "correctChoiceId": 1,
+      "scoring": {
+        "route1": 0,
+        "route2": 2,
+        "route3": 2,
+        "route4": 0,
+        "route5": 1
+      }
+    },
+    {
+      "id": "q10",
+      "text": "駒場で楽しめるのは次のうちどれ？",
+      "choices": [
+        {
+          "id": 1,
+          "image": "/images/questions/10/1.jpg"
+        },
+        {
+          "id": 2,
+          "image": "/images/questions/10/2.jpg"
+        },
+        {
+          "id": 3,
+          "image": "/images/stores/bungakukan/bungakukan.jpg"
+        },
+        {
+          "id": 4,
+          "image": "/images/questions/10/3.jpg"
+        }
+      ],
+      "correctChoiceId": 3,
+      "scoring": {
+        "route1": 0,
+        "route2": 0,
+        "route3": 0,
+        "route4": 1,
+        "route5": 0
+      }
     }
   ],
   "routes": {
@@ -252,7 +312,7 @@
         {
           "type": "spot",
           "name": "東京大学駒場博物館",
-          "image": "/images/dummy.png",
+          "image": "/images/stores/komaba-museum/komaba-museum.png",
           "description": "東大の中にある、旧制一高の図書館だった建物を活かした博物館。",
           "stayMinutes": 30,
           "hours": "月〜金 10:00〜17:00（休館期間あり）",
@@ -418,7 +478,7 @@
         {
           "type": "spot",
           "name": "東京大学駒場博物館",
-          "image": "/images/dummy.png",
+          "image": "/images/stores/komaba-museum/komaba-museum.png",
           "description": "東大の中にある、旧制一高の図書館だった建物を活かした博物館。",
           "stayMinutes": 30,
           "hours": "月〜金 10:00〜17:00（休館期間あり）",
